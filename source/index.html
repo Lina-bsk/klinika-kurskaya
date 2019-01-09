@@ -1,8 +1,297 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Клиника на Курской</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
+  <header class="header">
+    <div class="header__top">
+    <div class="logo"><span class="logo__color">Клиника</span> на Курской</div>
+    <a class="header__phone" href="#">+7 (499) 288-81-19<p>Заказать обратный звонок</p></a>
+    <label class="header__nav-btn" for="menu">Меню</label>
+    <input class="header__input" id="menu" type="checkbox">
+    <nav class="header__nav">
+      <a class="header__nav-item" href="#">О клинике</a>
+      <a class="header__nav-item" href="#">Услуги и цены</a>
+      <a class="header__nav-item" href="#">Как добраться</a>
+    </nav>
+    </div>
+    <article class="review">
+      <h1 class="review__title">Современный <span class="review__title-color">медицинский центр</span> на м. Курская</h1>
+      <p class="review__description">Выдача медицинских справок, оформление медицинских книжек, проведение психиатрического освидетельствования. Амбулаторный прием врачей. УЗИ. Медицинские анализы.</p>
+      <form class="form" method="post">
+      <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+      <a class="form__button" href="#">Записаться без очереди</a>
+      <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
+      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      </form>
+      <ul class="review-info">
+        <li class="review-info__item">от<p class="review-info__value">1000 руб.</p><p class="review-info__description">Медицинская справка за 15 минут</p></li>
+        <li class="review-info__item">от<p class="review-info__value">2700 руб.</p><p class="review-info__description">Медицинская книжка за 3 дня</p></li>
+        <li class="review-info__item">Безналичная\наличная формы оплаты. Для корпоративных клиентов индивидуальные условия</li>
+      </ul>
+    </article>
+  </header>
+  <main class="main">
+    <section class="about-clinic">
+      <h2 class="about-clinic__title">Клиника <span class="about-clinic__title-color">на Курской</span><p>Специализированный медицинский центр</p></h2>
+      <ul class="about-clinic__info">
+        <li class="about-clinic__item"><span>Современный медицинский центр,</span> входящий в группу компаний "Генезис".</li>
+        <li class="about-clinic__item"><span>Врачи центра - специалисты высшей категории</span> с многолетним опытом работы, сертифицированые по специальности профпатология.</li>
+        <li class="about-clinic__item"><span>Основная специализация центра -</span> амбулатурный прием пациентов, медицинская диагностика, проведение медицинских осмотров и выдача официальных заключений и справок.</li>
+        <li class="about-clinic__item">Центр оснащен всем необходимым<span>современным оборудованием.</span></li>
+      </ul>
+    </section>
+    <section class="advantages">
+      <dl class="advantages__list">
+        <div class="advantages__item">
+        <dt class="advantages__title">На протяжении уже более 10 лет</dt>
+        <dd>Оказываем медицнские услуги</dd>
+      </div>
+      <div class="advantages__item">
+        <dt class="advantages__title">Находимся в центре Москвы</dt>
+        <dd>5 минут от метро Курская, 5 минут от Курского вокзала</dd>
+      </div>
+      <div class="advantages__item">
+        <dt class="advantages__title">Высокий уровень сервиса</dt>
+        <dd>Центр оборудован по европейским стандартам качества.</dd>
+      </div>
+      <div class="advantages__item">
+        <dt class="advantages__title">300 медицинских справок</dt>
+        <dd>Выдаем каждый день, работаем 7 дней в неделю</dd>
+      </div>
+      </dl>
+    </section>
+    <section class="services">
+      <h2 class="services__title">Наши <span>услуги</span><p>Ознакомьтесь со списком услуг, которые мы предоставляем</p></h2>
+      <article class="review">
+      <h3 class="review__title">Выдача медицинских справок</h3>
+      <p class="review__description">Медицинские справки требуются почти при любой жизненной ситуации. Каждый из нас устраивался на новую работу, поступал в учебное заведение, пропускал занятия, из за болезни не ходил на работу, сдавал анализы для бассейна.</p>
+      <form class="form" method="post">
+      <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+      <a class="form__button" href="#">Записаться без очереди</a>
+      <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
+      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      </form>
+      <ul class="review-info">
+        <li class="review-info__item">стоимость от<p class="review-info__value">1000 руб.</p></li>
+        <li class="review-info__item">время выдачи<p class="review-info__value">15 мин.</p></li>
+      </ul>
+    </article>
+    </section>
+    <section class="pricelist">
+      <input id="price-list" type="checkbox" name="open-list">
+      <label class="pricelist__btn" for="price-list">Стоимость оформления <span>медицинских справок</span></label>
+      <div class="pricelist__block">
+        <table class="pricelist__table">
+          <caption class="pricelist__table-title">Справки для работы</caption>
+          <tr class="pricelist__item">
+            <td>1. Справка 302Н для работы</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+          <tr class="pricelist__item">
+            <td>2. Справка 086У для работы</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+          <tr class="pricelist__item">
+            <td>3. Водительская справка для работы</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+          <tr class="pricelist__item">
+            <td>4. Справка от нарколога для работы</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+          <tr class="pricelist__item">
+            <td>5. Справка от психиатра для работы</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+          <tr class="pricelist__item">
+            <td>6. Справка 002ОУ для работы</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+          <tr class="pricelist__item">
+            <td>7. Справка 003ОУ для работы</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+          <tr class="pricelist__item">
+            <td>8. Справка ХТИ для работы</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table">
+          <caption class="pricelist__table-title">Справки охранникам</caption>
+          <tr class="pricelist__item">
+            <td>1. Справка 002ОУ охранникам</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+          <tr class="pricelist__item">
+            <td>2. Справка 003ОУ охранникам</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+          <tr class="pricelist__item">
+            <td>3. Справка ХТИ охранникам</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+          <tr class="pricelist__item">
+            <td>4. Справка от нарколога охранникам</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+          <tr class="pricelist__item">
+            <td>5. Справка от психиатра охранникам</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+        </table>
+        <table class="pricelist__table">
+          <caption class="pricelist__table-title">Справки студентам</caption>
+          <tr class="pricelist__item">
+            <td>1. Справка 086У в ВУЗ</td>
+            <td><span class="pricelist__price">1500</span> руб.</td>
+          </tr>
+          <tr class="pricelist__item">
+            <td>2. Справка 095У в ВУЗ</td>
+            <td><span class="pricelist__price">500</span> руб.</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <article class="review review--medicalbook">
+      <h3 class="review__title">Оформление медицинских книжек</h3>
+      <p class="review__description">Потребуется при устройстве на работу связанную с учебным процессом, продуктами питания, бытовым обслуживанием, медучреждениями, общественным транспортом и многих других сфер занятости</p>
+      <form class="form" method="post">
+      <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+      <a class="form__button" href="#">Записаться без очереди</a>
+      <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
+      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      </form>
+      <ul class="review-info">
+        <li class="review-info__item">стоимость от<p class="review-info__value">2700 руб.</p></li>
+        <li class="review-info__item">время выдачи<p class="review-info__value">3 дня</p></li>
+      </ul>
+    </article>
+    <section class="pricelist">
+      <input id="price-list" type="checkbox" name="open-list">
+      <label class="pricelist__btn" for="price-list">Стоимость оформления <span>медицинских справок</span></label>
+    </section>
+    <section class="review review--medicalcheck">
+      <h3 class="review__title">Прохождение медицинской комиссии</h3>
+      <p class="review__description">Водительская медкомиссия, психиатрическое освидетельствование, профосмотры</p>
+      <form class="form" method="post">
+      <input class="form__phone" type="tel" name="phone">
+      <a class="form__button" href="#">Записаться без очереди</a>
+      <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
+      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      </form>
+      <ul class="review-info">
+        <li class="review-info__item">стоимость от<p class="review-info__value">1000 руб.</p></li>
+        <li class="review-info__item">время выдачи<p class="review-info__value">15 мин.</p></li>
+      </ul>
+    </section>
+    <section class="pricelist">
+      <input id="price-list" type="checkbox" name="open-list">
+      <label class="pricelist__btn" for="price-list">Стоимость оформления <span>медицинских справок</span></label>
+    </section>
+    <section class="review review--ultrasound">
+      <h3 class="review__title">Проведение ультрозвуковых исследований (УЗИ)</h3>
+      <p class="review__description">Процедура имеет широчайший спектр показаний и активно применяется для диагностики заболеваний самых различных систем организма. Также проводится в профилактических целях и с целью контроля за результатами лечения, при беременности.</p>
+      <form class="form" method="post">
+      <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+      <a class="form__button" href="#">Записаться без очереди</a>
+      <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
+      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      </form>
+      <ul class="review-info">
+        <li class="review-info__item">стоимость от<p class="review-info__value">700 руб.</p></li>
+        <li class="review-info__item">время выдачи<p class="review-info__value">3 дня</p></li>
+      </ul>
+    </section>
+    <section class="pricelist">
+      <input id="price-list" type="checkbox" name="open-list">
+      <label class="pricelist__btn" for="price-list">Стоимость оформления <span>медицинских справок</span></label>
+    </section>
+    <section class="review review--tests">
+      <h3 class="review__title">Все виды лабораторных анализов</h3>
+      <p class="review__description">Высокоточное оборудование последнего поколения, используемое лабораториями «Клиника на Курской», позволяет проводить исследования в автоматическом режиме и в кратчайшие сроки. Все исследования выполняются на автоматических анализаторах закрытого типа с использованием фирменных реагентов и калибраторов.</p>
+      <form class="form" method="post">
+      <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+      <a class="form__button" href="#">Записаться без очереди</a>
+      <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
+      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      </form>
+      <ul class="review-info">
+        <li class="review-info__item">стоимость от<p class="review-info__value">1000 руб.</p></li>
+        <li class="review-info__item">время выдачи<p class="review-info__value">15 мин.</p></li>
+      </ul>
+    </section>
+    <section class="pricelist">
+      <input id="price-list" type="checkbox" name="open-list">
+      <label class="pricelist__btn" for="price-list">Стоимость оформления <span>медицинских справок</span></label>
+    </section>
+    <section class="review review--doctors">
+      <h3 class="review__title">Амбулаторный прием врачей</h3>
+      <p class="review__description">Амбулаторный прием врачей  по следующим специальностям: Терапевт, ЛОР, Хирург, Гинеколог, Дерматолог-венеролог.</p>
+      <form class="form" method="post">
+      <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+      <a class="form__button" href="#">Записаться без очереди</a>
+      <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
+      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      </form>
+      <ul class="review-info">
+        <li class="review-info__item">стоимость от<p class="review-info__value">2700 руб.</p></li>
+        <li class="review-info__item">время выдачи<p class="review-info__value">3 дня</p></li>
+      </ul>
+    </section>
+    <section class="pricelist">
+      <input id="price-list" type="checkbox" name="open-list">
+      <label class="pricelist__btn" for="price-list">Стоимость оформления <span>медицинских справок</span></label>
+    </section>
+    <section class="licenses">
+      <h3>Имеем <span>допуски и лицензии</span> на все необходимые медицинские работы</h3>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="consultation">
+      <h4>Остались вопросы? Получите бесплатную консультацию</h4>
+      <form class="form" method="post">
+        <input type="text" name="name" placeholder="Как вас зовут?">
+        <input type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+        <textarea class="form__text" name="text" rows="6" placeholder="Опишите ваш вопрос"></textarea>
+        <a class="form__button" href="#">Записаться без очереди</a>
+        <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
+      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      </form>
+    </section>
+    <section class="contacts">
+      <h4 class="contacts__title">Контактная информация</h4>
+      <ul class="contacts__info">
+        <li class="contacts__item"><p class="contacts__icon">Наш адрес</p>Москва, ул. Земляной вал, д.7.<p class="contacts__address">1-я линия садового кольца, 5 минут от метро Курская, 5 минут от Курского вокзала</p></li>
+        <li class="contacts__item"><p class="contacts__icon">График работы</p>без выходных</li>
+        <li class="contacts__item"><p class="contacts__icon">E-mail</p>info@profmos.ru</li>
+        <li class="contacts__item"><p class="contacts__icon">Телефон</p>+7 (978) 000 - 00 - 00</li>
+      </ul>
+    </section>
+    <div class="footer__map"></div>
+    <div class="footer__page">
+      <div class="logo logo--footer"><span class="logo__color">Клиника</span> на Курской</div>
+      <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+    </div>
+  </footer>
+  <section class="popup">
+    <h4 class="popup__title">Записаться без очереди</h4>
+    <form class="form form--popup" method="post">
+      <input type="text" name="name" placeholder="Как вас зовут?">
+      <input type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+      <button class="form__button" type="submit">Записаться без очереди</button>
+      </form>
+  </section>
+  <section class="popup">
+    <h5>Заявка отправлена</h5>
+    <button class="form__button" type="button">Ок</button>
+  </section>
 </body>
+
 </html>
