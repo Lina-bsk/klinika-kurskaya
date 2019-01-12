@@ -1,0 +1,38 @@
+.review-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.review-info__item {
+  font-size: 11px;
+  line-height: 11px;
+  color: $grey;
+  width: 41%;
+  padding: 0 10px;
+
+  span {
+    display: block;
+  }
+
+  &--head {
+    display: none;
+  }
+}
+
+.review-info__value {
+  color: $blue;
+  font-size: 25px;
+  line-height: 11px;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.review-info__description {
+  color: $text-color;
+  font-size: 8px;
+  line-height: 11px;
+}

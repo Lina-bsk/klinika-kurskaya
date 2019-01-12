@@ -1,0 +1,39 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.review__title-header {
+  font-size: 24px;
+  font-line: 34px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0 10px;
+}
+
+.review__title {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.review__title-color {
+  color: #42afd2;
+  font-weight: 700;
+}
+
+.review__description {
+  text-align: center;
+  color: $text-color;
+}
+
+.review--medicalbook {
+  background-color: #e9f0f5;
+  padding-top: 260px;
+  padding-bottom: 30px;
+}

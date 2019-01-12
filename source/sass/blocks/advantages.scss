@@ -1,0 +1,28 @@
+.advantages {
+  padding: 0 15px;
+}
+
+.advantages__item {
+  margin-bottom: 10px;
+}
+
+.advantages__list {
+  counter-reset: section;
+}
+
+.advantages__title {
+  color: $blue;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 700;
+  padding-top: 40px;
+}
+
+.advantages__title::before {
+counter-increment: section;
+content: "0" counter(section);
+position: absolute;
+color: #f7f9fc;
+font-size: 86px;
+font-weight: 700;
+}

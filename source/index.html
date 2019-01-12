@@ -5,41 +5,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Клиника на Курской</title>
+  <link rel="stylesheet" type="text/css" href="libs/bootstrap-4.2.1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="header__top">
-    <div class="logo"><span class="logo__color">Клиника</span> на Курской</div>
-    <a class="header__phone" href="#">+7 (499) 288-81-19<p>Заказать обратный звонок</p></a>
+    <div class="logo"><img src="img/logo.png" width="102" height="27"></div>
+    <a class="header__phone" href="#">+7 (499) 288-81-19<p class="header__phone-description">Заказать обратный звонок</p></a>
+    <input class="header__input visually-hidden" type="checkbox" id="menu">
     <label class="header__nav-btn" for="menu">Меню</label>
-    <input class="header__input" id="menu" type="checkbox">
     <nav class="header__nav">
       <a class="header__nav-item" href="#">О клинике</a>
       <a class="header__nav-item" href="#">Услуги и цены</a>
       <a class="header__nav-item" href="#">Как добраться</a>
     </nav>
     </div>
-    <article class="review">
-      <h1 class="review__title">Современный <span class="review__title-color">медицинский центр</span> на м. Курская</h1>
+    <section class="review">
+      <h1 class="review__title-header">Современный <span class="review__title-color">медицинский центр</span> на м. Курская</h1>
       <p class="review__description">Выдача медицинских справок, оформление медицинских книжек, проведение психиатрического освидетельствования. Амбулаторный прием врачей. УЗИ. Медицинские анализы.</p>
       <form class="form" method="post">
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
-      <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      <label><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
       </form>
       <ul class="review-info">
-        <li class="review-info__item">от<p class="review-info__value">1000 руб.</p><p class="review-info__description">Медицинская справка за 15 минут</p></li>
-        <li class="review-info__item">от<p class="review-info__value">2700 руб.</p><p class="review-info__description">Медицинская книжка за 3 дня</p></li>
-        <li class="review-info__item">Безналичная\наличная формы оплаты. Для корпоративных клиентов индивидуальные условия</li>
+        <li class="review-info__item"><span>от</span><p class="review-info__value">1000</p> руб.<p class="review-info__description">Медицинская справка за 15 минут</p></li>
+        <li class="review-info__item"><span>от</span><p class="review-info__value">2700</p> руб.<p class="review-info__description">Медицинская книжка за 3 дня</p></li>
+        <li class="review-info__item review-info__item--head">Безналичная\наличная формы оплаты. Для корпоративных клиентов индивидуальные условия</li>
       </ul>
-    </article>
+    </section>
   </header>
   <main class="main">
     <section class="about-clinic">
-      <h2 class="about-clinic__title">Клиника <span class="about-clinic__title-color">на Курской</span><p>Специализированный медицинский центр</p></h2>
+      <div class="about-clinic__wrap">
+      <h2 class="about-clinic__title">Клиника <span class="about-clinic__title-color">на Курской</span></h2>
+      <p>Специализированный медицинский центр</p>
+    </div>
       <ul class="about-clinic__info">
         <li class="about-clinic__item"><span>Современный медицинский центр,</span> входящий в группу компаний "Генезис".</li>
         <li class="about-clinic__item"><span>Врачи центра - специалисты высшей категории</span> с многолетним опытом работы, сертифицированые по специальности профпатология.</li>
@@ -68,8 +71,10 @@
       </dl>
     </section>
     <section class="services">
-      <h2 class="services__title">Наши <span>услуги</span><p>Ознакомьтесь со списком услуг, которые мы предоставляем</p></h2>
-      <article class="review">
+      <div class="services__wrap">
+      <h2 class="services__title">Наши <span class="services__title-color">услуги</span></h2><p>Ознакомьтесь со списком услуг, которые мы предоставляем</p>
+    </div>
+      <section class="review">
       <h3 class="review__title">Выдача медицинских справок</h3>
       <p class="review__description">Медицинские справки требуются почти при любой жизненной ситуации. Каждый из нас устраивался на новую работу, поступал в учебное заведение, пропускал занятия, из за болезни не ходил на работу, сдавал анализы для бассейна.</p>
       <form class="form" method="post">
@@ -79,14 +84,13 @@
       <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
       </form>
       <ul class="review-info">
-        <li class="review-info__item">стоимость от<p class="review-info__value">1000 руб.</p></li>
-        <li class="review-info__item">время выдачи<p class="review-info__value">15 мин.</p></li>
+        <li class="review-info__item">стоимость от<p class="review-info__value">1000 </p> руб.</li>
+        <li class="review-info__item">время выдачи<p class="review-info__value">15 </p> мин.</li>
       </ul>
-    </article>
+    </section>
     </section>
     <section class="pricelist">
-      <input id="price-list" type="checkbox" name="open-list">
-      <label class="pricelist__btn" for="price-list">Стоимость оформления <span>медицинских справок</span></label>
+      <button class="pricelist__btn" type="button">Стоимость оформления</button>
       <div class="pricelist__block">
         <table class="pricelist__table">
           <caption class="pricelist__table-title">Справки для работы</caption>
@@ -159,7 +163,7 @@
         </table>
       </div>
     </section>
-    <article class="review review--medicalbook">
+    <section class="review review--medicalbook">
       <h3 class="review__title">Оформление медицинских книжек</h3>
       <p class="review__description">Потребуется при устройстве на работу связанную с учебным процессом, продуктами питания, бытовым обслуживанием, медучреждениями, общественным транспортом и многих других сфер занятости</p>
       <form class="form" method="post">
@@ -169,31 +173,29 @@
       <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
       </form>
       <ul class="review-info">
-        <li class="review-info__item">стоимость от<p class="review-info__value">2700 руб.</p></li>
-        <li class="review-info__item">время выдачи<p class="review-info__value">3 дня</p></li>
+        <li class="review-info__item">стоимость от<p class="review-info__value">2700</p> руб.</li>
+        <li class="review-info__item">время выдачи<p class="review-info__value">3 </p> дня</li>
       </ul>
-    </article>
+    </section>
     <section class="pricelist">
-      <input id="price-list" type="checkbox" name="open-list">
-      <label class="pricelist__btn" for="price-list">Стоимость оформления <span>медицинских справок</span></label>
+      <button class="pricelist__btn" type="button">Стоимость оформления</button>
     </section>
     <section class="review review--medicalcheck">
       <h3 class="review__title">Прохождение медицинской комиссии</h3>
       <p class="review__description">Водительская медкомиссия, психиатрическое освидетельствование, профосмотры</p>
       <form class="form" method="post">
-      <input class="form__phone" type="tel" name="phone">
+      <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
       <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
       </form>
       <ul class="review-info">
-        <li class="review-info__item">стоимость от<p class="review-info__value">1000 руб.</p></li>
-        <li class="review-info__item">время выдачи<p class="review-info__value">15 мин.</p></li>
+        <li class="review-info__item">стоимость от<p class="review-info__value">1000 </p> руб.</li>
+        <li class="review-info__item">время выдачи<p class="review-info__value">15 </p> мин.</li>
       </ul>
     </section>
     <section class="pricelist">
-      <input id="price-list" type="checkbox" name="open-list">
-      <label class="pricelist__btn" for="price-list">Стоимость оформления <span>медицинских справок</span></label>
+      <button class="pricelist__btn" type="button">Стоимость оформления</button>
     </section>
     <section class="review review--ultrasound">
       <h3 class="review__title">Проведение ультрозвуковых исследований (УЗИ)</h3>
@@ -205,13 +207,12 @@
       <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
       </form>
       <ul class="review-info">
-        <li class="review-info__item">стоимость от<p class="review-info__value">700 руб.</p></li>
-        <li class="review-info__item">время выдачи<p class="review-info__value">3 дня</p></li>
+        <li class="review-info__item">стоимость от<p class="review-info__value">700 </p> руб.</li>
+        <li class="review-info__item">время выдачи<p class="review-info__value">3 </p> дня</li>
       </ul>
     </section>
     <section class="pricelist">
-      <input id="price-list" type="checkbox" name="open-list">
-      <label class="pricelist__btn" for="price-list">Стоимость оформления <span>медицинских справок</span></label>
+      <button class="pricelist__btn" type="button">Стоимость оформления</button>
     </section>
     <section class="review review--tests">
       <h3 class="review__title">Все виды лабораторных анализов</h3>
@@ -223,13 +224,12 @@
       <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
       </form>
       <ul class="review-info">
-        <li class="review-info__item">стоимость от<p class="review-info__value">1000 руб.</p></li>
-        <li class="review-info__item">время выдачи<p class="review-info__value">15 мин.</p></li>
+        <li class="review-info__item">стоимость от<p class="review-info__value">1000 </p> руб.</li>
+        <li class="review-info__item">время выдачи<p class="review-info__value">15 </p> мин.</li>
       </ul>
     </section>
     <section class="pricelist">
-      <input id="price-list" type="checkbox" name="open-list">
-      <label class="pricelist__btn" for="price-list">Стоимость оформления <span>медицинских справок</span></label>
+      <button class="pricelist__btn" type="button">Стоимость оформления</button>
     </section>
     <section class="review review--doctors">
       <h3 class="review__title">Амбулаторный прием врачей</h3>
@@ -241,13 +241,12 @@
       <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
       </form>
       <ul class="review-info">
-        <li class="review-info__item">стоимость от<p class="review-info__value">2700 руб.</p></li>
-        <li class="review-info__item">время выдачи<p class="review-info__value">3 дня</p></li>
+        <li class="review-info__item">стоимость от<p class="review-info__value">2700 </p> руб.</li>
+        <li class="review-info__item">время выдачи<p class="review-info__value">3 </p> дня</li>
       </ul>
     </section>
     <section class="pricelist">
-      <input id="price-list" type="checkbox" name="open-list">
-      <label class="pricelist__btn" for="price-list">Стоимость оформления <span>медицинских справок</span></label>
+      <button class="pricelist__btn" type="button">Стоимость оформления</button>
     </section>
     <section class="licenses">
       <h3>Имеем <span>допуски и лицензии</span> на все необходимые медицинские работы</h3>
@@ -280,18 +279,37 @@
       <a class="footer__privacy" href="#">Политика конфиденциальности</a>
     </div>
   </footer>
-  <section class="popup">
-    <h4 class="popup__title">Записаться без очереди</h4>
-    <form class="form form--popup" method="post">
-      <input type="text" name="name" placeholder="Как вас зовут?">
-      <input type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
-      <button class="form__button" type="submit">Записаться без очереди</button>
-      </form>
-  </section>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   <section class="popup">
     <h5>Заявка отправлена</h5>
     <button class="form__button" type="button">Ок</button>
   </section>
+  <script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap-4.2.1/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="libs/popper.js"></script>
 </body>
 
 </html>
