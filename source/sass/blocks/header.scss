@@ -1,3 +1,101 @@
 .header {
-    background: url("../img/bg-back-mobile.png") no-repeat;
+  padding: 25px 0 32px;
+  background-image: linear-gradient(45deg, #d2e0eb, #f4f7f9 35%, #d2e0eb);
+  background: url("../../img/bg-mobile-2.png") no-repeat top center;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+  flex-wrap: wrap;
+}
+
+.header__phone {
+  color: $grey;
+  font-size: 10px;
+  line-height: 9px;
+  font-weight: 500;
+  display: block;
+  background-color: $white;
+  text-align: center;
+  padding: 9px 14px;
+  border-radius: 30px;
+}
+
+.header__phone-description {
+  display: none;
+}
+
+.header__nav-btn {
+  margin-right: 15px;
+  z-index: 2;
+  font-size: 0;
+  position: relative;
+  display: block;
+}
+
+.header__nav-btn::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 24px;
+  background-color: #4eb7d9;
+  box-shadow: 0 6px 0 0 #4eb7d9;
+  right: 0;
+  top: 7px;
+}
+
+.header__nav-btn::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 16px;
+  background-color: #4eb7d9;
+  top: 19px;
+  right: 8px;
+}
+
+.header__nav {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: $white;
+  margin-top: -60px;
+  padding-top: 120px;
+  z-index: 0;
+}
+
+.header__nav-item {
+  color: $grey;
+  font-size: 18px;
+  line-height: 36px;
+  display: block;
+  text-align: center;
+}
+
+.header__input:checked + .header__nav-btn {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #4eb7d9;
+    width: 20px;
+    height: 2px;
+    top: 11px;
+    right: 4px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.header__input:checked ~ .header__nav {
+  display: block;
 }
