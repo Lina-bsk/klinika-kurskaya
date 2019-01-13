@@ -2,10 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 15px;
+  margin: 0 auto;
 
-  &--services {
-    padding: 0;
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+  }
+}
+
+.review__wrap-head {
+  @media (min-width: $tablet-width) {
+    width: 65%;
+  }
+}
+
+.review__wrap {
+  max-width: 600px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -22,6 +36,10 @@
   line-height: 25px;
   font-weight: 700;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .review__title-color {

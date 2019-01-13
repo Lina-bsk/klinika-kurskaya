@@ -1,5 +1,7 @@
 .contacts {
-  padding: 0 15px;
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .contacts__title {
@@ -12,6 +14,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .contacts__item {
@@ -20,6 +32,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    font-size: 16px;
+  }
 }
 
 .contacts__icon {
@@ -42,6 +59,10 @@
 
   &--call {
     background: url("../../img/icon-call.png") no-repeat top center;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 12px;
   }
 }
 

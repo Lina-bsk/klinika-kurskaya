@@ -1,5 +1,7 @@
 .consultation {
-  padding: 0 15px;
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .consultation__title {

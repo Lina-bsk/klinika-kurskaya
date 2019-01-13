@@ -1,24 +1,45 @@
 .form {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: space-around;
+
+  &--feedback {
+    max-width: 600px;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .form__phone {
   border-radius: 17px;
   border: 0;
-  padding: 12px 90px 13px 36px;
+  padding: 12px 5px 13px 36px;
   background: url("../../img/icon-call.png") no-repeat $white;
   background-position: 13px 12px;
-  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.06);
-  margin-bottom: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
+  margin: 0 12px 10px;
+  width: 244px;
+
+  &--head {
+    max-width: 266px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+
+    &--head {
+      width: 214px;
+    }
+  }
 }
 
 .form__name {
   border-radius: 17px;
   border: 0;
   padding: 12px 90px 13px 36px;
-  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
   margin-bottom: 10px;
   background: url("../../img/icon-user.png") no-repeat $white;
   background-position: 13px 12px;
@@ -30,13 +51,21 @@
   font-weight: 700;
   color: $white;
   border-radius: 16px;
-  background-image: linear-gradient( -29deg, rgb(79,195,233) 0%, rgb(54,163,198) 100%);
-  box-shadow: 5px 9px 21px 0px rgba(54, 163, 198, 0.55);
+  background-image:  linear-gradient( -29deg, rgb(79,195,233) 0%, rgb(54,163,198) 100%);
+  box-shadow: 5px 9px 21px rgba(54, 163, 198, 0.55);
   display: block;
-  width: 266px;
+  width: 244px;
   text-align: center;
-  padding: 9px 0;
-  margin-bottom: 15px;
+  padding: 9px 10px;
+  margin: 0 auto 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 242px;
+
+    &--head {
+      width: 192px;
+    }
+  }
 }
 
 .form__check {
