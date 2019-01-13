@@ -4,6 +4,8 @@
 
 .advantages__item {
   margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .advantages__list {
@@ -25,4 +27,6 @@ position: absolute;
 color: #f7f9fc;
 font-size: 86px;
 font-weight: 700;
+z-index: -1;
+top: 23px;
 }
