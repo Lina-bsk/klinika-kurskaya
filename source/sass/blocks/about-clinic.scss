@@ -1,11 +1,13 @@
-.about-clinic {
-  padding: 0 15px;
-}
-
 .about-clinic__wrap {
-  font-size: 12px;
-  line-height: 52px;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .about-clinic__title {
@@ -19,23 +21,70 @@
   color: #42afd2;
 }
 
+.about-clinic__title-description {
+  font-size: 12px;
+  line-height: 52px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+}
+
 .about-clinic__info {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-end;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: unset;
+    justify-content: flex-start;
+    max-width: 724px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .about-clinic__item {
   margin-bottom: 35px;
   padding-left: 30px;
-  display: flex;
+  max-width: 350px;
 
   span {
-  color: $grey;
-  font-weight: 500;
+    color: $grey;
+    font-weight: 500;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+
+    &--1 {
+      order: 1;
+    }
+
+    &--2 {
+      order: 2;
+    }
+
+    &--3 {
+      order: 3;
+    }
+
+    &--4 {
+      order: 4;
+    }
+  }
+}
+
+.about-clinic__item-wrap {
+  display: flex;
 }
 
 .about-clinic__decor {

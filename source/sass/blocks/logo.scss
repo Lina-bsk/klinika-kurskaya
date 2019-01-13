@@ -1,8 +1,17 @@
 .logo {
   width: 102px;
   height: 27px;
-  padding-left: 15px;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 133px;
+    height: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 159px;
+    height: 40px;
+  }
 }
 
 .logo--footer {
