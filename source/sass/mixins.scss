@@ -1,0 +1,9 @@
+@mixin font-title {
+  font: {
+    size: 24px;
+    weight: 400;
+  }
+  line-height: 34px;
+  color: $grey;
+  text-align: center;
+}

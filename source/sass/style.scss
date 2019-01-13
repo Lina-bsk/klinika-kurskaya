@@ -1,5 +1,12 @@
+@import "../libs/bootstrap-4.2.1/scss/functions";
+@import "../libs/bootstrap-4.2.1/scss/variables";
+@import "../libs/bootstrap-4.2.1/scss/mixins";
+@import "../libs/bootstrap-4.2.1/scss/transitions";
+@import "../libs/bootstrap-4.2.1/scss/modal";
+@import "../libs/bootstrap-4.2.1/scss/reboot";
 @import "normalize.scss";
 @import "variables.scss";
+@import "mixins.scss";
 @import "global.scss";
 @import "fonts.scss";
 @import "blocks/header.scss";
@@ -11,3 +18,7 @@
 @import "blocks/advantages.scss";
 @import "blocks/services";
 @import "blocks/pricelist.scss";
+@import "blocks/licenses.scss";
+@import "blocks/consultation.scss";
+@import "blocks/footer.scss";
+@import "blocks/contacts.scss";

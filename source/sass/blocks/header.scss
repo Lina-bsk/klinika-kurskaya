@@ -1,7 +1,6 @@
 .header {
   padding: 25px 0 32px;
-  background-image: linear-gradient(45deg, #d2e0eb, #f4f7f9 35%, #d2e0eb);
-  background: url("../../img/bg-mobile-2.png") no-repeat top center;
+  background-image: url("../../img/bg-mobile-2.png"), linear-gradient(45deg, #d2e0eb, #f4f7f9 35%, #d2e0eb);
 }
 
 .header__top {
@@ -35,7 +34,7 @@
   display: block;
 }
 
-.header__nav-btn::before {
+.header__nav-btn--open::before {
   content: "";
   position: absolute;
   height: 2px;
@@ -46,7 +45,7 @@
   top: 7px;
 }
 
-.header__nav-btn::after {
+.header__nav-btn--open::after {
   content: "";
   position: absolute;
   height: 2px;
@@ -57,13 +56,20 @@
 }
 
 .header__nav {
-  display: none;
   width: 100%;
   height: 100vh;
   background-color: $white;
   margin-top: -60px;
   padding-top: 120px;
   z-index: 0;
+
+  &--open {
+    display: block;
+  }
+
+  &--close {
+    display: none;
+  }
 }
 
 .header__nav-item {
@@ -74,7 +80,7 @@
   text-align: center;
 }
 
-.header__input:checked + .header__nav-btn {
+.header__nav-btn--close {
   &::before,
   &::after {
     content: "";
@@ -94,8 +100,4 @@
   &::after {
     transform: rotate(-45deg);
   }
-}
-
-.header__input:checked ~ .header__nav {
-  display: block;
 }

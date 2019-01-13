@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Клиника на Курской</title>
-  <link rel="stylesheet" type="text/css" href="libs/bootstrap-4.2.1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -14,9 +13,8 @@
     <div class="header__top">
     <div class="logo"><img src="img/logo.png" width="102" height="27"></div>
     <a class="header__phone" href="#">+7 (499) 288-81-19<p class="header__phone-description">Заказать обратный звонок</p></a>
-    <input class="header__input visually-hidden" type="checkbox" id="menu">
-    <label class="header__nav-btn" for="menu">Меню</label>
-    <nav class="header__nav">
+    <button class="header__nav-btn header__nav-btn--open" type="button">Меню</button>
+    <nav class="header__nav header__nav--closed">
       <a class="header__nav-item" href="#">О клинике</a>
       <a class="header__nav-item" href="#">Услуги и цены</a>
       <a class="header__nav-item" href="#">Как добраться</a>
@@ -44,10 +42,10 @@
       <p>Специализированный медицинский центр</p>
     </div>
       <ul class="about-clinic__info">
-        <li class="about-clinic__item"><span>Современный медицинский центр,</span> входящий в группу компаний "Генезис".</li>
-        <li class="about-clinic__item"><span>Врачи центра - специалисты высшей категории</span> с многолетним опытом работы, сертифицированые по специальности профпатология.</li>
-        <li class="about-clinic__item"><span>Основная специализация центра -</span> амбулатурный прием пациентов, медицинская диагностика, проведение медицинских осмотров и выдача официальных заключений и справок.</li>
-        <li class="about-clinic__item">Центр оснащен всем необходимым<span>современным оборудованием.</span></li>
+        <li class="about-clinic__item"><span class="about-clinic__decor"></span><p><span>Современный медицинский центр,</span> входящий в группу компаний "Генезис".</p></li>
+        <li class="about-clinic__item"><span class="about-clinic__decor"></span><p><span>Врачи центра - специалисты высшей категории</span> с многолетним опытом работы, сертифицированые по специальности профпатология.</p></li>
+        <li class="about-clinic__item"><span class="about-clinic__decor"></span><span><p>Основная специализация центра -</span> амбулатурный прием пациентов, медицинская диагностика, проведение медицинских осмотров и выдача официальных заключений и справок.</p></li>
+        <li class="about-clinic__item"><span class="about-clinic__decor"></span><p>Центр оснащен всем необходимым<span>современным оборудованием.</span></p></li>
       </ul>
     </section>
     <section class="advantages">
@@ -74,7 +72,7 @@
       <div class="services__wrap">
       <h2 class="services__title">Наши <span class="services__title-color">услуги</span></h2><p>Ознакомьтесь со списком услуг, которые мы предоставляем</p>
     </div>
-      <section class="review">
+      <section class="review review--services">
       <h3 class="review__title">Выдача медицинских справок</h3>
       <p class="review__description">Медицинские справки требуются почти при любой жизненной ситуации. Каждый из нас устраивался на новую работу, поступал в учебное заведение, пропускал занятия, из за болезни не ходил на работу, сдавал анализы для бассейна.</p>
       <form class="form" method="post">
@@ -90,7 +88,7 @@
     </section>
     </section>
     <section class="pricelist">
-      <button class="pricelist__btn" type="button">Стоимость оформления</button>
+      <button class="pricelist__btn" type="button">Стоимость оформления<span class="pricelist__btn-open"></span></button>
       <div class="pricelist__block">
         <table class="pricelist__table">
           <caption class="pricelist__table-title">Справки для работы</caption>
@@ -173,8 +171,8 @@
       <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
       </form>
       <ul class="review-info">
-        <li class="review-info__item">стоимость от<p class="review-info__value">2700</p> руб.</li>
-        <li class="review-info__item">время выдачи<p class="review-info__value">3 </p> дня</li>
+        <li class="review-info__item"><span>стоимость от</span><p class="review-info__value">2700</p> руб.</li>
+        <li class="review-info__item"><span>время выдачи</span><p class="review-info__value">3 </p> дня</li>
       </ul>
     </section>
     <section class="pricelist">
@@ -249,15 +247,15 @@
       <button class="pricelist__btn" type="button">Стоимость оформления</button>
     </section>
     <section class="licenses">
-      <h3>Имеем <span>допуски и лицензии</span> на все необходимые медицинские работы</h3>
+      <h3 class="licenses__title">Имеем <span class="licenses__title-color">допуски и лицензии</span> на все необходимые медицинские работы</h3>
     </section>
   </main>
   <footer class="footer">
     <section class="consultation">
-      <h4>Остались вопросы? Получите бесплатную консультацию</h4>
+      <h4 class="consultation__title">Остались вопросы? Получите бесплатную консультацию</h4>
       <form class="form" method="post">
-        <input type="text" name="name" placeholder="Как вас зовут?">
-        <input type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+        <input class="form__name" type="text" name="name" placeholder="Как вас зовут?">
+        <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
         <textarea class="form__text" name="text" rows="6" placeholder="Опишите ваш вопрос"></textarea>
         <a class="form__button" href="#">Записаться без очереди</a>
         <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
@@ -267,10 +265,10 @@
     <section class="contacts">
       <h4 class="contacts__title">Контактная информация</h4>
       <ul class="contacts__info">
-        <li class="contacts__item"><p class="contacts__icon">Наш адрес</p>Москва, ул. Земляной вал, д.7.<p class="contacts__address">1-я линия садового кольца, 5 минут от метро Курская, 5 минут от Курского вокзала</p></li>
-        <li class="contacts__item"><p class="contacts__icon">График работы</p>без выходных</li>
-        <li class="contacts__item"><p class="contacts__icon">E-mail</p>info@profmos.ru</li>
-        <li class="contacts__item"><p class="contacts__icon">Телефон</p>+7 (978) 000 - 00 - 00</li>
+        <li class="contacts__item"><p class="contacts__icon contacts__icon--point">Наш адрес</p>Москва, ул. Земляной вал, д.7.<p class="contacts__address">1-я линия садового кольца, 5 минут от метро Курская, 5 минут от Курского вокзала</p></li>
+        <li class="contacts__item"><p class="contacts__icon contacts__icon--calendar">График работы</p>без выходных</li>
+        <li class="contacts__item"><p class="contacts__icon contacts__icon--mail">E-mail</p>info@profmos.ru</li>
+        <li class="contacts__item"><p class="contacts__icon contacts__icon--call">Телефон</p>+7 (978) 000 - 00 - 00</li>
       </ul>
     </section>
     <div class="footer__map"></div>
@@ -307,6 +305,7 @@
     <h5>Заявка отправлена</h5>
     <button class="form__button" type="button">Ок</button>
   </section>
+  <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="libs/bootstrap-4.2.1/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="libs/popper.js"></script>

@@ -1,6 +1,6 @@
 .form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -8,10 +8,20 @@
   border-radius: 17px;
   border: 0;
   padding: 12px 90px 13px 36px;
-  background: url("../../img/call-answer.png") no-repeat $white;
+  background: url("../../img/icon-call.png") no-repeat $white;
   background-position: 13px 12px;
   box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.06);
   margin-bottom: 10px;
+}
+
+.form__name {
+  border-radius: 17px;
+  border: 0;
+  padding: 12px 90px 13px 36px;
+  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 10px;
+  background: url("../../img/icon-user.png") no-repeat $white;
+  background-position: 13px 12px;
 }
 
 .form__button {

@@ -1,0 +1,13 @@
+.licenses {
+  padding: 0 15px;
+  background-color: #fbfcfc;
+}
+
+.licenses__title {
+  @include font-title;
+}
+
+.licenses__title-color {
+  font-weight: 700;
+  color: #50b3d4;
+}

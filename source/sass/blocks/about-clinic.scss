@@ -10,6 +10,7 @@
 
 .about-clinic__title {
   font-size: 24px;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -29,9 +30,46 @@
 .about-clinic__item {
   margin-bottom: 35px;
   padding-left: 30px;
+  display: flex;
 
   span {
   color: $grey;
   font-weight: 500;
+  }
+}
+
+.about-clinic__decor {
+  width: 1px;
+  height: auto;
+  background-color: $blue;
+  left: -18px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 12px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    width: 15px;
+    height: 15px;
+    border: 5px solid $blue;
+    border-radius: 50px;
+    top: -13px;
+    right: -7px;
+  }
+
+  &::after {
+    width: 7px;
+    height: 7px;
+    background-color: $blue;
+    border-radius: 50%;
+    bottom: -14px;
+    right: -3px;
   }
 }
