@@ -804,9 +804,12 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+
+.header__btn-phone {
+  margin: 0 25px 0 auto; }
 
 .header__phone {
   color: #333333;
@@ -816,7 +819,7 @@ img {
   display: block;
   background-color: #ffffff;
   text-align: center;
-  padding: 9px 5px;
+  padding: 9px 5px 7px 5px;
   border-radius: 30px;
   width: 118px;
   position: relative; }
@@ -866,10 +869,10 @@ img {
   height: 2px;
   width: 24px;
   background-color: #4eb7d9;
-  -webkit-box-shadow: 0 6px 0 0 #4eb7d9;
-          box-shadow: 0 6px 0 0 #4eb7d9;
+  -webkit-box-shadow: 0 5px 0 0 #4eb7d9;
+          box-shadow: 0 5px 0 0 #4eb7d9;
   right: 0;
-  top: 7px; }
+  top: 6px; }
 
 .header__nav-btn--open::after {
   content: "";
@@ -877,7 +880,7 @@ img {
   height: 2px;
   width: 16px;
   background-color: #4eb7d9;
-  top: 19px;
+  top: 16px;
   right: 8px; }
 
 .header__nav {
@@ -962,19 +965,40 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #4c6783; }
+  .review--services {
+    padding-top: 272px; }
+  .review--medicalbook {
+    padding-top: 257px;
+    background-color: #e9f0f5;
+    padding-bottom: 24px; }
+  .review--medicalcheck {
+    padding-top: 264px;
+    padding-bottom: 28px; }
+  .review--ultrasound {
+    padding-top: 260px;
+    padding-bottom: 28px; }
+  .review--tests {
+    padding-top: 308px;
+    padding-bottom: 18px; }
+  .review--doctors {
+    padding-top: 228px; }
   @media (min-width: 1200px) {
     .review {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start; } }
 
-@media (min-width: 768px) {
-  .review__wrap-head {
-    width: 65%; } }
+.review__wrap-head {
+  margin-bottom: 26px; }
+  @media (min-width: 768px) {
+    .review__wrap-head {
+      width: 65%; } }
 
 .review__wrap {
-  max-width: 600px; }
+  max-width: 600px;
+  margin-bottom: 42px; }
   @media (min-width: 1200px) {
     .review__wrap {
       margin-left: 0; } }
@@ -986,15 +1010,22 @@ img {
   color: #333333;
   text-align: center;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
   padding: 0 10px; }
 
 .review__title {
   margin: 0;
+  margin-bottom: 11px;
   font-size: 18px;
   line-height: 25px;
   font-weight: 700;
   color: #333333; }
+  .review__title--medicalbook {
+    margin-bottom: 15px; }
+  .review__title--ultrasound {
+    margin-bottom: 15px; }
+  .review__title--tests {
+    margin-bottom: 14px; }
   @media (min-width: 768px) {
     .review__title {
       text-align: center; } }
@@ -1003,14 +1034,21 @@ img {
   color: #42afd2;
   font-weight: 700; }
 
-.review__description {
+.review__description-header {
   text-align: center;
-  color: #4c6783; }
+  color: #4c6783;
+  line-height: 18px;
+  margin-bottom: 18px; }
 
-.review--medicalbook {
-  background-color: #e9f0f5;
-  padding-top: 260px;
-  padding-bottom: 30px; }
+.review__description {
+  text-align: left;
+  color: #4c6783;
+  line-height: 17px;
+  margin-bottom: 26px; }
+  .review__description--ultrasound {
+    margin-bottom: 35px; }
+  .review__description--tests {
+    margin-bottom: 37px; }
 
 .form {
   display: -webkit-box;
@@ -1028,35 +1066,58 @@ img {
           -ms-flex-pack: justify;
               justify-content: space-between; } }
 
-.form__phone {
+.form__phone-header {
   border-radius: 17px;
   border: 0;
-  padding: 12px 5px 13px 36px;
+  padding: 7px 5px 6px 35px;
   background: url("../../img/icon-call.png") no-repeat #ffffff;
   background-position: 13px 12px;
   -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
           box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
-  margin: 0 12px 10px;
-  width: 244px; }
-  .form__phone--head {
-    max-width: 266px; }
+  margin: 0 12px 12px;
+  width: 266px;
+  font-size: 9px;
+  line-height: 20px;
+  color: #4c6783; }
+  @media (min-width: 768px) {
+    .form__phone-header {
+      width: 214px; } }
+
+.form__phone {
+  border-radius: 17px;
+  border: 0;
+  padding: 12px 5px 12px 41px;
+  background: url("../../img/icon-call.png") no-repeat #ffffff;
+  background-position: 19px 11px;
+  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
+  margin: 0 12px 14px;
+  width: 244px;
+  font-size: 10px; }
+  .form__phone--feedback {
+    width: 287px;
+    padding: 12px 10px 14px 37px;
+    margin: 0;
+    margin-bottom: 17px;
+    background-position: 13px 12px; }
   @media (min-width: 768px) {
     .form__phone {
-      width: 270px; }
-      .form__phone--head {
-        width: 214px; } }
+      width: 270px; } }
 
 .form__name {
   border-radius: 17px;
   border: 0;
-  padding: 12px 90px 13px 36px;
+  padding: 8px 10px 10px 38px;
   -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
           box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   background: url("../../img/icon-user.png") no-repeat #ffffff;
-  background-position: 13px 12px; }
+  background-position: 15px 10px;
+  width: 287px;
+  font-size: 11px;
+  line-height: 18px; }
 
-.form__button {
+.form__button-header {
   font-size: 9px;
   line-height: 20px;
   font-weight: 700;
@@ -1066,15 +1127,40 @@ img {
   -webkit-box-shadow: 5px 9px 21px rgba(54, 163, 198, 0.55);
           box-shadow: 5px 9px 21px rgba(54, 163, 198, 0.55);
   display: block;
-  width: 244px;
+  width: 266px;
   text-align: center;
-  padding: 9px 10px;
+  padding: 6px 5px 7px 3px;
   margin: 0 auto 10px; }
   @media (min-width: 768px) {
+    .form__button-header {
+      width: 192px; } }
+
+.form__button {
+  font-size: 10px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 16px;
+  background-image: linear-gradient(-29deg, #4fc3e9 0%, #36a3c6 100%);
+  -webkit-box-shadow: 5px 9px 21px rgba(54, 163, 198, 0.55);
+          box-shadow: 5px 9px 21px rgba(54, 163, 198, 0.55);
+  display: block;
+  width: 244px;
+  text-align: center;
+  padding: 7px 5px 7px 3px;
+  margin: 0 auto 14px; }
+  .form__button--feedback {
+    width: 179px; }
+  @media (min-width: 768px) {
     .form__button {
-      width: 242px; }
-      .form__button--head {
-        width: 192px; } }
+      width: 242px; } }
+
+.form__label {
+  margin: 9px 0 0 15px;
+  color: #909090; }
+  .form__label--header {
+    color: #4c6783;
+    margin-left: 0; }
 
 .form__check {
   font-size: 10px;
@@ -1090,7 +1176,7 @@ img {
   height: 14px;
   border: 1px solid #93a3b4;
   border-radius: 3px;
-  left: 20px; }
+  left: 24px; }
 
 .form__checked:checked + .form__check::after {
   content: "";
@@ -1099,8 +1185,17 @@ img {
   height: 6px;
   background-color: #36a3c6;
   border-radius: 50%;
-  left: 24px;
+  left: 28px;
   top: 4px; }
+
+.form__text {
+  width: 100%;
+  border: 0;
+  border-radius: 24px;
+  font-size: 10px;
+  line-height: 18px;
+  padding: 11px 5px 3px 40px;
+  margin-bottom: 15px; }
 
 .review-info {
   display: -webkit-box;
@@ -1124,11 +1219,13 @@ img {
   font-size: 11px;
   line-height: 11px;
   color: #333333;
-  width: 50%; }
+  width: 45%;
+  padding-left: 24px; }
   .review-info__item span {
     display: block; }
   .review-info__item--size {
-    width: 41%; }
+    width: 42%;
+    padding-left: 14px; }
   @media (min-width: 768px) {
     .review-info__item--size {
       width: 25%; } }
@@ -1171,10 +1268,14 @@ img {
 .review-info__value {
   color: #36a3c6;
   font-size: 25px;
-  line-height: 11px;
+  line-height: 13px;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 14px;
   display: inline-block; }
+  .review-info__value--header {
+    margin-top: 10px;
+    margin-bottom: 14px; }
 
 .review-info__description {
   color: #4c6783;
@@ -1187,8 +1288,12 @@ img {
       line-height: 15px;
       color: #4c6783; } }
 
+.about-clinic {
+  padding: 33px 0 0; }
+
 .about-clinic__wrap {
-  color: #333333; }
+  color: #333333;
+  margin-bottom: 42px; }
   @media (min-width: 768px) {
     .about-clinic__wrap {
       text-align: center; } }
@@ -1198,6 +1303,7 @@ img {
 
 .about-clinic__title {
   font-size: 24px;
+  line-height: 33px;
   font-weight: 400;
   margin: 0; }
 
@@ -1207,13 +1313,14 @@ img {
 
 .about-clinic__title-description {
   font-size: 12px;
-  line-height: 52px;
+  line-height: 24px;
   margin: 0; }
   @media (min-width: 768px) {
     .about-clinic__title-description {
       font-size: 14px; } }
 
 .about-clinic__info {
+  line-height: 16px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1245,7 +1352,7 @@ img {
       width: 50%; } }
 
 .about-clinic__item {
-  margin-bottom: 35px;
+  margin-bottom: 46px;
   padding-left: 30px;
   max-width: 350px; }
   .about-clinic__item span {
@@ -1280,7 +1387,7 @@ img {
   width: 1px;
   height: auto;
   background-color: #36a3c6;
-  left: -18px;
+  left: -23px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1288,7 +1395,7 @@ img {
       flex-shrink: 0;
   position: relative;
   margin-top: 10px;
-  margin-bottom: 12px; }
+  margin-bottom: 8px; }
   .about-clinic__decor::before, .about-clinic__decor::after {
     content: "";
     position: absolute; }
@@ -1297,15 +1404,19 @@ img {
     height: 15px;
     border: 5px solid #36a3c6;
     border-radius: 50px;
-    top: -13px;
+    top: -12px;
     right: -7px; }
   .about-clinic__decor::after {
     width: 7px;
     height: 7px;
     background-color: #36a3c6;
     border-radius: 50%;
-    bottom: -14px;
+    bottom: -12px;
     right: -3px; }
+
+.advantages {
+  padding: 11px 0 6px;
+  color: #4c6783; }
 
 .advantages__list {
   counter-reset: section;
@@ -1316,7 +1427,7 @@ img {
       flex-wrap: wrap; }
 
 .advantages__item {
-  margin-bottom: 10px;
+  margin-bottom: 26px;
   position: relative;
   z-index: 1;
   max-width: 330px;
@@ -1333,7 +1444,8 @@ img {
   font-size: 15px;
   line-height: 21px;
   font-weight: 700;
-  padding-top: 40px; }
+  padding-top: 40px;
+  margin-bottom: 9px; }
 
 .advantages__title::before {
   counter-increment: section;
@@ -1343,23 +1455,24 @@ img {
   font-size: 86px;
   font-weight: 700;
   z-index: -1;
-  top: 23px; }
+  top: 24px;
+  left: -4px; }
 
 .services {
-  padding: 40px 0 40px;
+  padding: 40px 0 33px;
   background-color: #f4f7f9;
   color: #333333; }
 
 .services__wrap {
   text-align: center;
-  padding: 0 20px;
-  margin-bottom: 270px; }
+  padding: 0 20px; }
 
 .services__title {
   font-size: 24px;
-  line-height: 52px;
+  line-height: 33px;
   font-weight: 400;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 4px; }
 
 .services__title-color {
   color: #42afd2;
@@ -1372,13 +1485,15 @@ img {
 .pricelist__btn {
   background-color: #ffffff;
   color: #000000;
+  font-size: 12px;
+  line-height: 17px;
   font-weight: 500;
   border: 1px solid #ffffff;
   border-radius: 30px;
   -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
           box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
   width: 100%;
-  padding: 7px 6px 7px 16px;
+  padding: 4px 5px 4px 21px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1401,8 +1516,8 @@ img {
       display: inline-block; } }
 
 .pricelist__btn-open {
-  width: 26px;
-  height: 27px;
+  width: 25px;
+  height: 26px;
   border-radius: 50%;
   background-image: linear-gradient(-29deg, #3da8ca 0%, #4fc3e9 0%, #3da8ca 100%);
   display: inline-block;
@@ -1413,8 +1528,8 @@ img {
     width: 7px;
     height: 7px;
     border: 1px solid #d1eef7;
-    top: 13px;
-    right: 10px;
+    top: 11px;
+    right: 9px;
     border-bottom: transparent;
     border-right: transparent;
     -webkit-transform: rotate(43deg);
@@ -1422,8 +1537,8 @@ img {
 
 .pricelist__block {
   background-color: #fbfbfb;
-  padding: 10px;
-  width: 89%;
+  padding: 16px 10px 10px 10px;
+  width: 88%;
   margin: 0 auto;
   -webkit-box-shadow: 2.5px 4.33px 10px rgba(0, 0, 0, 0.06);
           box-shadow: 2.5px 4.33px 10px rgba(0, 0, 0, 0.06);
@@ -1438,7 +1553,8 @@ img {
   font-size: 10px;
   line-height: 14px;
   color: #000000;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
   @media (min-width: 768px) {
     .pricelist__table {
       max-width: 970px;
@@ -1449,7 +1565,8 @@ img {
   font-size: 12px;
   line-height: 40px;
   color: #000000;
-  padding: 0; }
+  padding: 0;
+  padding-left: 6px; }
 
 .pricelist__price {
   font-weight: 700;
@@ -1462,21 +1579,68 @@ img {
   border-bottom: 1px solid #e6e6e6; }
 
 .pricelist__item td {
-  padding: 10px 0; }
+  padding: 15px 0 0 7px; }
 
 .pricelist__item td:first-child {
-  padding-right: 10px;
-  width: 78%; }
+  width: 73%; }
 
 @media (min-width: 768px) {
   .pricelist__item td {
     padding: 10px 27px; } }
 
-.pricelist__btn--closed + .pricelist__block {
-  display: none; }
+@-webkit-keyframes scale-display {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px);
+            transform: translate3d(0, -20px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0);
+            transform: translate3d(0, 0); } }
 
-.pricelist__btn--open + .pricelist__block {
-  display: block; }
+@keyframes scale-display {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px);
+            transform: translate3d(0, -20px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0);
+            transform: translate3d(0, 0); } }
+
+@-webkit-keyframes scale-display--reversed {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0);
+            transform: translate3d(0, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px);
+            transform: translate3d(0, -20px); } }
+
+@keyframes scale-display--reversed {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0);
+            transform: translate3d(0, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px);
+            transform: translate3d(0, -20px); } }
+
+.button-disapear {
+  display: none; }
+  .button-disapear--open {
+    -webkit-animation: scale-display 1s;
+            animation: scale-display 1s;
+    display: block; }
+  .button-disapear--out {
+    -webkit-animation: scale-display--reversed 0.3s;
+            animation: scale-display--reversed 0.3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    display: block;
+    height: 0px; }
 
 .licenses {
   background-color: #fbfcfc; }
@@ -1501,10 +1665,12 @@ img {
   font-weight: 400;
   line-height: 34px;
   color: #333333;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 21px; }
 
 .footer {
-  background-color: #f4f7f9; }
+  background-color: #f4f7f9;
+  padding-top: 41px; }
   @media (min-width: 1200px) {
     .footer {
       display: -webkit-box;

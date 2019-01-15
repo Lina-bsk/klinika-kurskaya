@@ -19,7 +19,9 @@
       <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Клиника на Курской">
     </picture>
   </div>
+  <div class="header__btn-phone">
     <a class="header__phone" href="#">+7 (499) 288-81-19<p class="header__phone-description">Заказать обратный звонок</p></a>
+  </div>
     <button class="header__nav-btn header__nav-btn--open" type="button">Меню</button>
     <nav class="header__nav">
       <a class="header__nav-item" href="#">О клинике</a>
@@ -32,16 +34,16 @@
       <div class="container">
         <div class="review__wrap-head">
       <h1 class="review__title-header">Современный <span class="review__title-color">медицинский центр</span> на м. Курская</h1>
-      <p class="review__description">Выдача медицинских справок, оформление медицинских книжек, проведение психиатрического освидетельствования. Амбулаторный прием врачей. УЗИ. Медицинские анализы.</p>
+      <p class="review__description-header">Выдача медицинских справок, оформление медицинских книжек, проведение психиатрического освидетельствования. Амбулаторный прием врачей. УЗИ. Медицинские анализы.</p>
       <form class="form" method="post">
-      <input class="form__phone form__phone--head" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
-      <a class="form__button form__button--head" href="#">Записаться без очереди</a>
-      <label><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
+      <input class="form__phone-header" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+      <a class="form__button-header" href="#">Записаться без очереди</a>
+      <label class="form__label form__label--header"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
       </form>
     </div>
       <ul class="review-info review-info--head">
-        <li class="review-info__item review-info__item--size"><span>от</span><p class="review-info__value">1000</p> руб.<p class="review-info__description">Медицинская справка <span>за 15 минут</span></p></li>
-        <li class="review-info__item review-info__item--size"><span>от</span><p class="review-info__value">2700</p> руб.<p class="review-info__description">Медицинская книжка <span>за 3 дня</span></p></li>
+        <li class="review-info__item review-info__item--size"><span>от</span><p class="review-info__value review-info__value--header">1000</p> руб.<p class="review-info__description">Медицинская справка <span>за 15 минут</span></p></li>
+        <li class="review-info__item review-info__item--size"><span>от</span><p class="review-info__value review-info__value--header">2700</p> руб.<p class="review-info__description">Медицинская книжка <span>за 3 дня</span></p></li>
         <li class="review-info__item review-info__item--head review-info__item--size">Безналичная\наличная формы оплаты. Для корпоративных клиентов индивидуальные условия</li>
       </ul>
     </div>
@@ -57,9 +59,9 @@
       <ul class="about-clinic__info">
         <li class="about-clinic__item about-clinic__item--1">
           <div class="about-clinic__item-wrap"><span class="about-clinic__decor"></span><p><span>Современный медицинский центр,</span> входящий в группу компаний "Генезис".</p></div></li>
-        <li class="about-clinic__item about-clinic__item--3"><div class="about-clinic__item-wrap"><span class="about-clinic__decor"></span><p><span>Врачи центра - специалисты высшей категории</span> с многолетним опытом работы, сертифицированые по специальности профпатология.</p></div></li>
+        <li class="about-clinic__item about-clinic__item--3"><div class="about-clinic__item-wrap"><span class="about-clinic__decor"></span><p><span>Врачи центра - специалисты высшей категории </span>с многолетним опытом работы, сертифицированые по специальности профпатология.</p></div></li>
         <li class="about-clinic__item about-clinic__item--2"><div class="about-clinic__item-wrap"><span class="about-clinic__decor"></span><p><span>Основная специализация центра -</span> амбулатурный прием пациентов, медицинская диагностика, проведение медицинских осмотров и выдача официальных заключений и справок.</p></div></li>
-        <li class="about-clinic__item about-clinic__item--4"><div class="about-clinic__item-wrap"><span class="about-clinic__decor"></span><p>Центр оснащен всем необходимым<span>современным оборудованием.</span></p></div></li>
+        <li class="about-clinic__item about-clinic__item--4"><div class="about-clinic__item-wrap"><span class="about-clinic__decor"></span><p>Центр оснащен всем необходимым <span>современным оборудованием.</span></p></div></li>
       </ul>
     </div>
     </section>
@@ -98,7 +100,7 @@
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
       </form>
     </div>
       <ul class="review-info">
@@ -110,8 +112,8 @@
     </section>
     <section class="pricelist">
       <div class="container">
-      <button class="pricelist__btn pricelist__btn--open" type="button"><span>Стоимость оформления <span class="pricelist__btn-add">медицинских справок</span></span><span class="pricelist__btn-open"></span></button>
-      <div class="pricelist__block">
+      <button class="pricelist__btn pricelist__btn--open button--trigger" type="button"><span>Стоимость оформления <span class="pricelist__btn-add">медицинских справок</span></span><span class="pricelist__btn-open"></span></button>
+      <div class="pricelist__block button-disapear button-disapear--out">
         <table class="pricelist__table">
           <caption class="pricelist__table-title">Справки для работы</caption>
           <tr class="pricelist__item">
@@ -187,13 +189,13 @@
     <section class="review review--medicalbook">
       <div class="container">
         <div class="review__wrap">
-      <h3 class="review__title">Оформление медицинских книжек</h3>
+      <h3 class="review__title review__title--medicalbook">Оформление медицинских книжек</h3>
       <p class="review__description">Потребуется при устройстве на работу связанную с учебным процессом, продуктами питания, бытовым обслуживанием, медучреждениями, общественным транспортом и многих других сфер занятости</p>
       <form class="form" method="post">
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
       </form>
     </div>
       <ul class="review-info">
@@ -216,7 +218,7 @@
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
       </form>
     </div>
       <ul class="review-info">
@@ -233,17 +235,17 @@
     <section class="review review--ultrasound">
       <div class="container">
         <div class="review__wrap">
-      <h3 class="review__title">Проведение ультрозвуковых исследований (УЗИ)</h3>
-      <p class="review__description">Процедура имеет широчайший спектр показаний и активно применяется для диагностики заболеваний самых различных систем организма. Также проводится в профилактических целях и с целью контроля за результатами лечения, при беременности.</p>
+      <h3 class="review__title review__title--ultrasound">Проведение ультрозвуковых исследований (УЗИ)</h3>
+      <p class="review__description review__description--ultrasound">Процедура имеет широчайший спектр показаний и активно применяется для диагностики заболеваний самых различных систем организма. Также проводится в профилактических целях и с целью контроля за результатами лечения, при беременности.</p>
       <form class="form" method="post">
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
       </form>
     </div>
       <ul class="review-info">
-        <li class="review-info__item"><span>стоимость от</span><p class="review-info__value">700 </p> руб.</li>
+        <li class="review-info__item"><span>стоимость от</span><p class="review-info__value">2700 </p> руб.</li>
         <li class="review-info__item"><span>время выдачи</span><p class="review-info__value">3 </p> дня</li>
       </ul>
     </div>
@@ -256,13 +258,13 @@
     <section class="review review--tests">
       <div class="container">
         <div class="review__wrap">
-      <h3 class="review__title">Все виды лабораторных анализов</h3>
-      <p class="review__description">Высокоточное оборудование последнего поколения, используемое лабораториями «Клиника на Курской», позволяет проводить исследования в автоматическом режиме и в кратчайшие сроки. Все исследования выполняются на автоматических анализаторах закрытого типа с использованием фирменных реагентов и калибраторов.</p>
+      <h3 class="review__title review__title--tests">Все виды лабораторных анализов</h3>
+      <p class="review__description review__description--tests">Высокоточное оборудование последнего поколения, используемое лабораториями «Клиника на Курской», позволяет проводить исследования в автоматическом режиме и в кратчайшие сроки. Все исследования выполняются на автоматических анализаторах закрытого типа с использованием фирменных реагентов и калибраторов.</p>
       <form class="form" method="post">
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
       </form>
     </div>
       <ul class="review-info">
@@ -285,7 +287,7 @@
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
       </form>
     </div>
       <ul class="review-info">
@@ -311,9 +313,9 @@
       <h4 class="consultation__title">Остались вопросы? Получите бесплатную консультацию</h4>
       <form class="form form--feedback" method="post">
         <input class="form__name" type="text" name="name" placeholder="Как вас зовут?">
-        <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
-        <textarea class="form__text" name="text" rows="6" placeholder="Опишите ваш вопрос"></textarea>
-        <a class="form__button" href="#">Записаться без очереди</a>
+        <input class="form__phone form__phone--feedback" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+        <textarea class="form__text" name="text" rows="4" placeholder="Опишите ваш вопрос"></textarea>
+        <a class="form__button form__button--feedback" href="#">Записаться без очереди</a>
         <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
       <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
       </form>

@@ -20,14 +20,16 @@
   font-size: 11px;
   line-height: 11px;
   color: $grey;
-  width: 50%;
+  width: 45%;
+  padding-left: 24px;
 
   span {
     display: block;
   }
 
   &--size {
-    width: 41%;
+    width: 42%;
+    padding-left: 14px;
   }
 
   @media (min-width: $tablet-width) {
@@ -80,10 +82,16 @@
 .review-info__value {
   color: $blue;
   font-size: 25px;
-  line-height: 11px;
+  line-height: 13px;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 14px;
   display: inline-block;
+
+  &--header {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  }
 }
 
 .review-info__description {
