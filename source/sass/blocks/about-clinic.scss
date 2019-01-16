@@ -1,19 +1,46 @@
+.about-clinic {
+  padding: 33px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 86px;
+    background: url("../../img/bg-about-clinic.png") no-repeat 100% -7px;
+  }
+}
+
 .about-clinic__wrap {
   color: $grey;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    margin-bottom: 92px;
   }
 }
 
 .about-clinic__title {
   font-size: 24px;
+  line-height: 33px;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 52px;
+  }
 }
 
 .about-clinic__title-color {
@@ -23,15 +50,21 @@
 
 .about-clinic__title-description {
   font-size: 12px;
-  line-height: 52px;
+  line-height: 24px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 35px;
+  }
 }
 
 .about-clinic__info {
+  line-height: 16px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -40,11 +73,13 @@
   align-items: flex-end;
 
   @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: unset;
-    justify-content: flex-start;
-    max-width: 724px;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 800px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,7 +88,7 @@
 }
 
 .about-clinic__item {
-  margin-bottom: 35px;
+  margin-bottom: 46px;
   padding-left: 30px;
   max-width: 350px;
 
@@ -64,6 +99,8 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    margin-bottom: 68px;
+    padding-left: 32px;
 
     &--1 {
       order: 1;
@@ -81,6 +118,12 @@
       order: 4;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 48.5%;
+    margin-bottom: 58px;
+    padding: 0 14px 0 32px;
+  }
 }
 
 .about-clinic__item-wrap {
@@ -91,12 +134,19 @@
   width: 1px;
   height: auto;
   background-color: $blue;
-  left: -18px;
+  left: -23px;
   flex-grow: 1;
   flex-shrink: 0;
   position: relative;
   margin-top: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    left: -28px;
+    width: 2px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+  }
 
   &::before,
   &::after {
@@ -109,8 +159,15 @@
     height: 15px;
     border: 5px solid $blue;
     border-radius: 50px;
-    top: -13px;
+    top: -12px;
     right: -7px;
+
+    @media (min-width: $tablet-width) {
+      top: -15px;
+      right: -8px;
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &::after {
@@ -118,7 +175,17 @@
     height: 7px;
     background-color: $blue;
     border-radius: 50%;
-    bottom: -14px;
+    bottom: -12px;
     right: -3px;
+
+    @media (min-width: $tablet-width) {
+      width: 8px;
+      height: 8px;
+      bottom: -13px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
   }
 }

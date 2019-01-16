@@ -1,13 +1,57 @@
 .header {
   padding: 25px 0 32px;
-  background-image: url("../../img/bg-mobile-2.png"), linear-gradient(45deg, #d2e0eb, #f4f7f9 35%, #d2e0eb);
+  background: url("../../img/bg-passport-desktop.png"),
+    url("../../img/bg-header.png");
+  background-repeat: no-repeat;
+  background-position: 133% 35%,
+    22.5% 5%;
+  background-size: 0 0,
+    auto;
+
+  @media (min-width: $tablet-width) {
+    background-size: 395px 344px,
+      auto;
+    background-position: 133% 35%,
+      30.5% 5%;
+    padding-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 0 71px;
+    background-size: auto, auto;
+    background-position: 98% 52%,
+      50.5% 5%;
+  }
 }
 
 .header__top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 89px;
+  }
+}
+
+.header__btn-phone {
+  margin: 0 25px 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 39px 0 auto;
+    z-index: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    order: 1;
+    margin: 0;
+  }
 }
 
 .header__phone {
@@ -18,25 +62,26 @@
   display: block;
   background-color: $white;
   text-align: center;
-  padding: 9px 5px;
+  padding: 9px 5px 7px 5px;
   border-radius: 30px;
   width: 118px;
   position: relative;
+  box-shadow: 4.5px 7px 18px 0px rgba(0, 0, 0, 0.1);
 
   @media (min-width: $tablet-width) {
     width: 189px;
-    padding-left: 38px;
+    padding-left: 29px;
+    padding-top: 10px;
     font-size: 13px;
     line-height: 12px;
 
     &::before {
       content: "";
       position: absolute;
-      width: 31px;
-      height: 31px;
-
-      top: 5px;
-      left: 10px;
+      width: 29px;
+      height: 29px;
+      top: 6px;
+      left: 7px;
 
       @include circle;
     }
@@ -48,8 +93,27 @@
       width: 14px;
       height: 14px;
       top: 13px;
-      left: 18px;
+      left: 13px;
     }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        width: 32px;
+        height: 32px;
+        top: 5px;
+      }
+
+      &::after {
+        left: 15px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 214px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 8px 5px 7px 23px;
   }
 }
 
@@ -70,6 +134,10 @@
   font-size: 0;
   position: relative;
   display: block;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .header__nav-btn--open::before {
@@ -78,9 +146,14 @@
   height: 2px;
   width: 24px;
   background-color: #4eb7d9;
-  box-shadow: 0 6px 0 0 #4eb7d9;
+  box-shadow: 0 5px 0 0 #4eb7d9;
   right: 0;
-  top: 7px;
+  top: 6px;
+
+  @media (min-width: $tablet-width) {
+    right: 4px;
+    top: 14px;
+  }
 }
 
 .header__nav-btn--open::after {
@@ -89,19 +162,39 @@
   height: 2px;
   width: 16px;
   background-color: #4eb7d9;
-  top: 19px;
+  top: 16px;
   right: 8px;
+
+  @media (min-width: $tablet-width) {
+    top: 24px;
+    right: 12px;
+  }
 }
 
 .header__nav {
   width: 100%;
   height: 100vh;
   background-color: $white;
-  padding-top: 120px;
+  padding-top: 115px;
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    height: auto;
+    width: auto;
+    align-items: center;
+    margin: 0 52px 0 auto;
+  }
 }
 
 .header__nav-item {
@@ -110,6 +203,17 @@
   line-height: 36px;
   display: block;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 29px;
+  }
 }
 
 .header__nav-btn--closed {
@@ -118,10 +222,14 @@
     content: "";
     position: absolute;
     background-color: #4eb7d9;
-    width: 20px;
+    width: 18px;
     height: 2px;
     top: 11px;
-    right: 4px;
+    right: -3px;
+
+    @media (min-width: $tablet-width) {
+      top: 17px;
+    }
   }
 
   &::before {
@@ -136,8 +244,16 @@
 
 .header__nav-btn--closed + .header__nav {
   display: block;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .header__nav-btn--open + .header__nav {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }

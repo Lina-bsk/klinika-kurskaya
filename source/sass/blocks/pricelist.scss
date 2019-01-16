@@ -1,17 +1,21 @@
 .pricelist {
-  padding: 0 0 50px;
   background-color: #f4f7f9;
+  width: 100%;
+  margin-top: 34px;
+  padding-bottom: 153px;
 }
 
 .pricelist__btn {
   background-color: $white;
   color: $black;
+  font-size: 12px;
+  line-height: 17px;
   font-weight: 500;
   border: 1px solid $white;
   border-radius: 30px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
   width: 100%;
-  padding: 7px 6px 7px 16px;
+  padding: 4px 5px 4px 21px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,8 +36,8 @@
 }
 
 .pricelist__btn-open {
-  width: 26px;
-  height: 27px;
+  width: 25px;
+  height: 26px;
 
   @include circle;
   display: inline-block;
@@ -45,8 +49,8 @@
     width: 7px;
     height: 7px;
     border: 1px solid #d1eef7;
-    top: 13px;
-    right: 10px;
+    top: 11px;
+    right: 9px;
     border-bottom: transparent;
     border-right: transparent;
     transform: rotate(43deg);
@@ -55,8 +59,8 @@
 
 .pricelist__block {
   background-color: #fbfbfb;
-  padding: 10px;
-  width: 89%;
+  padding: 16px 10px 10px 10px;
+  width: 88%;
   margin: 0 auto;
   box-shadow: 2.5px 4.33px 10px rgba(0, 0, 0, 0.06);
   border-radius: 0 0 25px 25px;
@@ -73,6 +77,7 @@
   line-height: 14px;
   color: $black;
   width: 100%;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     max-width: 970px;
@@ -86,6 +91,7 @@
   line-height: 40px;
   color: $black;
   padding: 0;
+  padding-left: 6px;
 }
 
 .pricelist__price {
@@ -103,12 +109,11 @@
   }
 
   td {
-    padding: 10px 0;
+    padding: 15px 0 0 7px;
   }
 
   td:first-child {
-    padding-right: 10px;
-    width: 78%;
+    width: 73%;
   }
 
   @media (min-width: $tablet-width) {
@@ -118,10 +123,51 @@
   }
 }
 
-.pricelist__btn--closed + .pricelist__block {
-  display: none;
+// .pricelist__btn--closed + .pricelist__block {
+//   display: none;
+// }
+
+
+// .pricelist__btn--open + .pricelist__block {
+//   display: block;
+// }
+
+@keyframes scale-display {
+from {
+    opacity: 0;
+    transform: translate3d(0, -20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0);
+  }
 }
 
-.pricelist__btn--open + .pricelist__block {
-  display: block;
+@keyframes scale-display--reversed {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -20px);
+  }
 }
+
+.button-disapear {
+  display: none;
+
+    &--open {
+      animation: scale-display 1s;
+      display: block;
+    }
+
+    &--out {
+      animation: scale-display--reversed 0.3s;
+      animation-fill-mode:forwards;
+      display: block;
+      height: 0px;
+    }
+  }

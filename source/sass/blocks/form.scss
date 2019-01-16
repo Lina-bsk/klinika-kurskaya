@@ -8,29 +8,78 @@
   }
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: 542px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 100%;
   }
 }
 
 .form__phone {
   border-radius: 17px;
   border: 0;
-  padding: 12px 5px 13px 36px;
+  padding: 12px 5px 12px 41px;
   background: url("../../img/icon-call.png") no-repeat $white;
-  background-position: 13px 12px;
+  background-position: 19px 11px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
-  margin: 0 12px 10px;
+  margin: 0 12px 14px;
   width: 244px;
+  font-size: 10px;
 
-  &--head {
-    max-width: 266px;
+  &--header {
+    padding: 7px 5px 6px 35px;
+    background-position: 13px 12px;
+    margin: 0 12px 12px;
+    width: 266px;
+    font-size: 9px;
+    line-height: 20px;
+    color: $text-color;
+  }
+
+  &--feedback {
+    width: 287px;
+    padding: 12px 10px 14px 37px;
+    margin: 0;
+    margin-bottom: 17px;
+    background-position: 13px 12px;
   }
 
   @media (min-width: $tablet-width) {
     width: 270px;
+    font-size: 14px;
+    border-radius: 31px;
+    padding: 17px 5px 17px 54px;
+    background: url("../../img/icon-call-tablet@1x.png") no-repeat $white;
+    background-position: 21px 16px;
+    margin: 0 0 14px;
 
-    &--head {
+    &--header {
       width: 214px;
+      margin: 0 17px 0 0;
+      font-size: 11px;
+      line-height: 23px;
+      padding: 10px 5px 6px 42px;
+      border-radius: 20px;
+      background-position: 16px 11px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 30px;
+    width: 268px;
+    font-size: 14px;
+    line-height: 30px;
+    background: url("../../img/icon-call-desktop.png") no-repeat $white;
+    background-position: 18px 17px;
+    padding: 12px 5px 10px 50px;
+
+    &--header {
+      padding-bottom: 8px;
+      margin-right: 20px;
     }
   }
 }
@@ -38,32 +87,91 @@
 .form__name {
   border-radius: 17px;
   border: 0;
-  padding: 12px 90px 13px 36px;
+  padding: 8px 10px 10px 38px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   background: url("../../img/icon-user.png") no-repeat $white;
-  background-position: 13px 12px;
+  background-position: 15px 10px;
+  width: 287px;
+  font-size: 11px;
+  line-height: 18px;
 }
 
-.form__button {
+.form__button-header {
   font-size: 9px;
   line-height: 20px;
   font-weight: 700;
   color: $white;
-  border-radius: 16px;
-  background-image:  linear-gradient( -29deg, rgb(79,195,233) 0%, rgb(54,163,198) 100%);
-  box-shadow: 5px 9px 21px rgba(54, 163, 198, 0.55);
-  display: block;
+  width: 266px;
+  text-align: center;
+  padding: 6px 5px 7px 3px;
+  margin: 0 auto 10px;
+
+  @include button;
+
+  @media (min-width: $tablet-width) {
+    width: 192px;
+    margin: 0;
+    line-height: 23px;
+    font-size: 11px;
+    padding-top: 9px;
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 242px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 30px;
+    padding-top: 11px;
+  }
+}
+
+.form__button {
+  font-size: 10px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $white;
   width: 244px;
   text-align: center;
-  padding: 9px 10px;
-  margin: 0 auto 10px;
+  padding: 7px 5px 7px 3px;
+  margin: 0 auto 14px;
+
+  @include button;
+
+  &--feedback {
+    width: 179px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 242px;
+    font-size: 14px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-left: 8px;
+    border-radius: 30px;
+    margin-left: 21px;
+  }
+}
 
-    &--head {
-      width: 192px;
+.form__label {
+  margin: 9px 0 0 15px;
+  color: #909090;
+
+
+  &--header {
+    color: $text-color;
+    margin-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin-left: 4px;
+
+    &--header {
+      width: auto;
+      margin-top: 23px;
     }
   }
 }
@@ -74,6 +182,20 @@
   padding-left: 45px;
   position: relative;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 34px;
+  }
+}
+
+.form__check-info {
+  text-decoration: underline;
+  cursor: pointer;
+  color: inherit;
 }
 
 .form__check::before {
@@ -83,7 +205,15 @@
   height: 14px;
   border: 1px solid #93a3b4;
   border-radius: 3px;
-  left: 20px;
+  left: 24px;
+
+  @media (min-width: $tablet-width) {
+    left: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 13px;
+  }
 }
 
 .form__checked:checked + .form__check::after {
@@ -93,6 +223,24 @@
   height: 6px;
   background-color: $blue;
   border-radius: 50%;
-  left: 24px;
+  left: 28px;
   top: 4px;
+
+  @media (min-width: $tablet-width) {
+    left: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 17px;
+  }
+}
+
+.form__text {
+  width: 100%;
+  border: 0;
+  border-radius: 24px;
+  font-size: 10px;
+  line-height: 18px;
+  padding: 11px 5px 3px 40px;
+  margin-bottom: 15px;
 }
