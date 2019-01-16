@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Клиника на Курской</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 
 <body>
@@ -24,9 +25,9 @@
   </div>
     <button class="header__nav-btn header__nav-btn--open" type="button">Меню</button>
     <nav class="header__nav">
-      <a class="header__nav-item" href="#">О клинике</a>
-      <a class="header__nav-item" href="#">Услуги и цены</a>
-      <a class="header__nav-item" href="#">Как добраться</a>
+      <a class="header__nav-item" href="#about">О клинике</a>
+      <a class="header__nav-item" href="#prices">Услуги и цены</a>
+      <a class="header__nav-item" href="#address">Как добраться</a>
     </nav>
     </div>
     </div>
@@ -36,21 +37,21 @@
       <h1 class="review__title-header">Современный <span class="review__title-color">медицинский центр</span> на м. Курская</h1>
       <p class="review__description-header">Выдача медицинских справок, оформление медицинских книжек, проведение психиатрического освидетельствования. Амбулаторный прием врачей. УЗИ. Медицинские анализы.</p>
       <form class="form" method="post">
-      <input class="form__phone-header" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+      <input class="form__phone form__phone--header" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button-header" href="#">Записаться без очереди</a>
-      <label class="form__label form__label--header"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
+      <label class="form__label form__label--header"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
       </form>
     </div>
       <ul class="review-info review-info--head">
         <li class="review-info__item review-info__item--size"><span>от</span><p class="review-info__value review-info__value--header">1000</p> руб.<p class="review-info__description">Медицинская справка <span>за 15 минут</span></p></li>
         <li class="review-info__item review-info__item--size"><span>от</span><p class="review-info__value review-info__value--header">2700</p> руб.<p class="review-info__description">Медицинская книжка <span>за 3 дня</span></p></li>
-        <li class="review-info__item review-info__item--head review-info__item--size">Безналичная\наличная формы оплаты. Для корпоративных клиентов индивидуальные условия</li>
+        <li class="review-info__item review-info__item--head">Безналичная\наличная формы оплаты. Для корпоративных клиентов индивидуальные условия</li>
       </ul>
     </div>
     </section>
   </header>
   <main class="main">
-    <section class="about-clinic">
+    <section class="about-clinic" id="about">
       <div class="container">
       <div class="about-clinic__wrap">
       <h2 class="about-clinic__title">Клиника <span class="about-clinic__title-color">на Курской</span></h2>
@@ -87,7 +88,7 @@
       </dl>
     </div>
     </section>
-    <section class="services">
+    <section class="services" id="prices">
       <div class="container">
       <div class="services__wrap">
       <h2 class="services__title">Наши <span class="services__title-color">услуги</span></h2><p>Ознакомьтесь со списком услуг, которые мы предоставляем</p>
@@ -100,7 +101,7 @@
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
+      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
       </form>
     </div>
       <ul class="review-info">
@@ -109,7 +110,6 @@
       </ul>
     </section>
   </div>
-    </section>
     <section class="pricelist">
       <div class="container">
       <button class="pricelist__btn pricelist__btn--open button--trigger" type="button"><span>Стоимость оформления <span class="pricelist__btn-add">медицинских справок</span></span><span class="pricelist__btn-open"></span></button>
@@ -186,6 +186,7 @@
       </div>
   </div>
     </section>
+    </section>
     <section class="review review--medicalbook">
       <div class="container">
         <div class="review__wrap">
@@ -195,7 +196,7 @@
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
+      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
       </form>
     </div>
       <ul class="review-info">
@@ -203,11 +204,11 @@
         <li class="review-info__item"><span>время выдачи</span><p class="review-info__value">3 </p> дня</li>
       </ul>
     </div>
-    </section>
     <section class="pricelist">
       <div class="container">
       <button class="pricelist__btn" type="button"><span>Стоимость оформления <span class="pricelist__btn-add">медицинских справок</span></span><span class="pricelist__btn-open"></span></button>
     </div>
+    </section>
     </section>
     <section class="review review--medicalcheck">
       <div class="container">
@@ -218,7 +219,7 @@
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
+      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
       </form>
     </div>
       <ul class="review-info">
@@ -226,11 +227,11 @@
         <li class="review-info__item"><span>время выдачи</span><p class="review-info__value">15 </p> мин.</li>
       </ul>
     </div>
-    </section>
     <section class="pricelist">
       <div class="container">
       <button class="pricelist__btn" type="button"><span>Стоимость оформления <span class="pricelist__btn-add">медицинских справок</span></span><span class="pricelist__btn-open"></span></button>
     </div>
+    </section>
     </section>
     <section class="review review--ultrasound">
       <div class="container">
@@ -241,7 +242,7 @@
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
+      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
       </form>
     </div>
       <ul class="review-info">
@@ -249,11 +250,11 @@
         <li class="review-info__item"><span>время выдачи</span><p class="review-info__value">3 </p> дня</li>
       </ul>
     </div>
-    </section>
     <section class="pricelist">
       <div class="container">
       <button class="pricelist__btn" type="button"><span>Стоимость оформления <span class="pricelist__btn-add">медицинских справок</span></span><span class="pricelist__btn-open"></span></button>
     </div>
+    </section>
     </section>
     <section class="review review--tests">
       <div class="container">
@@ -264,7 +265,7 @@
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
+      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
       </form>
     </div>
       <ul class="review-info">
@@ -272,11 +273,11 @@
         <li class="review-info__item"><span>время выдачи</span><p class="review-info__value">15 </p> мин.</li>
       </ul>
     </div>
-    </section>
     <section class="pricelist">
       <div class="container">
       <button class="pricelist__btn" type="button"><span>Стоимость оформления <span class="pricelist__btn-add">медицинских справок</span></span><span class="pricelist__btn-open"></span></button>
     </div>
+    </section>
     </section>
     <section class="review review--doctors">
       <div class="container">
@@ -287,7 +288,7 @@
       <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
       <a class="form__button" href="#">Записаться без очереди</a>
       <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  персональных данных</span></label>
+      <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
       </form>
     </div>
       <ul class="review-info">
@@ -295,11 +296,11 @@
         <li class="review-info__item"><span>время выдачи</span><p class="review-info__value">3 </p> дня</li>
       </ul>
     </div>
-    </section>
     <section class="pricelist">
       <div class="container">
       <button class="pricelist__btn" type="button"><span>Стоимость оформления <span class="pricelist__btn-add">медицинских справок</span></span><span class="pricelist__btn-open"></span></button>
     </div>
+    </section>
     </section>
     <section class="licenses">
       <div class="container">
@@ -317,11 +318,11 @@
         <textarea class="form__text" name="text" rows="4" placeholder="Опишите ваш вопрос"></textarea>
         <a class="form__button form__button--feedback" href="#">Записаться без очереди</a>
         <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  персональных данных</label>
+      <label class="form__check" for="check-agree">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></label>
       </form>
     </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="address">
       <div class="container">
       <h4 class="contacts__title">Контактная информация</h4>
       <ul class="contacts__info">
@@ -371,7 +372,7 @@
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="libs/bootstrap-4.2.1/dist/js/bootstrap.min.js"></script>
-  <!-- <script type="text/javascript" src="libs/popper.js"></script> -->
+  <script type="text/javascript" src="libs/popper.js"></script>
 </body>
 
 </html>

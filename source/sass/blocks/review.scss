@@ -7,17 +7,32 @@
 
   &--services {
     padding-top: 272px;
+    background: url("../../img/bg-services.png") #f4f7f9;
+    background-repeat: no-repeat;
+    background-position: center 8%;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 405px;
+      background: url("../../img/bg-services-tablet@1x.png") #f4f7f9;
+      background-repeat: no-repeat;
+      background-position: 57% 11%;
+    }
   }
 
   &--medicalbook {
     padding-top: 257px;
-    background-color: #e9f0f5;
+    background: url("../../img/bg-medicalbook.png") #e9f0f5;
+    background-repeat: no-repeat;
+    background-position: center 3%;
     padding-bottom: 24px;
   }
 
   &--medicalcheck {
     padding-top: 264px;
     padding-bottom: 28px;
+    background: url("../../img/bg-medicalcheck.png") #e9f0f5;
+    background-repeat: no-repeat;
+    background-position: 0 2%;
   }
 
   &--ultrasound {
@@ -28,6 +43,9 @@
   &--tests {
     padding-top: 308px;
     padding-bottom: 18px;
+    background: url("../../img/bg-tests.png") #f4f7f9;
+    background-repeat: no-repeat;
+    background-position: center 3%;
   }
 
   &--doctors {
@@ -36,6 +54,7 @@
 
   @media (min-width: $desktop-width) {
     align-items: flex-start;
+    padding-top: 0;
   }
 }
 
@@ -44,15 +63,24 @@
 
   @media (min-width: $tablet-width) {
     width: 65%;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin-bottom: 75px;
   }
 }
 
 .review__wrap {
   max-width: 600px;
+  margin: 0 auto;
   margin-bottom: 42px;
 
   @media (min-width: $desktop-width) {
+    width: 50%;
     margin-left: 0;
+    padding-left: 5px;
   }
 }
 
@@ -61,6 +89,20 @@
   margin: 0;
   margin-bottom: 15px;
   padding: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 42px;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 38px;
+    line-height: 49px;
+    margin-bottom: 21px;
+  }
 }
 
 .review__title {
@@ -85,6 +127,14 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    font-size: 27px;
+    line-height: 37px;
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+    text-align: left;
   }
 }
 
@@ -98,6 +148,20 @@
   color: $text-color;
   line-height: 18px;
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 23px;
+    text-align: left;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 25px;
+    padding-right: 45px;
+    margin-bottom: 36px;
+  }
 }
 
 .review__description {
@@ -112,5 +176,19 @@
 
   &--tests {
     margin-bottom: 37px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $light-grey;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: left;
   }
 }

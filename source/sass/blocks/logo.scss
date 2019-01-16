@@ -6,11 +6,14 @@
   @media (min-width: $tablet-width) {
     width: 133px;
     height: 34px;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
     width: 159px;
     height: 40px;
+    margin-right: 20px;
+    padding: 0;
   }
 }
 

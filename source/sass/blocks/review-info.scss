@@ -1,17 +1,28 @@
 .review-info {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
   width: 100%;
-  max-width: 600px;
+  // max-width: 600px;
+
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+
+    &--head {
+      width: 100%;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: auto;
 
     &--head {
       margin-left: 0;
+      width: 78%;
     }
   }
 }
@@ -33,8 +44,12 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    padding-left: 0;
+
     &--size {
-      width: 25%;
+      width: 26%;
     }
   }
 }
@@ -47,9 +62,10 @@
     line-height: 23px;
     color: $text-color;
     display: block;
-    padding-left: 40px;
+    padding-left: 33px;
+    padding-top: 22px;
     position: relative;
-    width: 40%;
+    width: 46%;
 
 
     &::before {
@@ -60,8 +76,8 @@
       width: 18px;
       height: 18px;
       box-shadow: 1px 1px 16px 3px rgba(61, 172, 208, 0.45);
-      top: 0;
-      left: 0;
+      top: 24px;
+      left: -5px;
     }
 
     &::after {
@@ -70,12 +86,16 @@
       width: 6px;
       height: 12px;
       border: 1px solid $white;
-      top: 0;
-      left: 7px;
+      top: 24px;
+      left: 2px;
       border-left: transparent;
       border-top: transparent;
       transform: rotate(45deg);
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 36%;
   }
 }
 
@@ -89,8 +109,20 @@
   display: inline-block;
 
   &--header {
-  margin-top: 10px;
-  margin-bottom: 14px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 16px;
+    margin: 14px 0 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--header {
+      margin: 16px 0 20px;
+    }
   }
 }
 

@@ -1,5 +1,14 @@
 .about-clinic {
   padding: 33px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 86px;
+    background: url("../../img/bg-about-clinic.png") no-repeat 100% -7px;
+  }
 }
 
 .about-clinic__wrap {
@@ -8,10 +17,12 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    margin-bottom: 92px;
   }
 }
 
@@ -20,6 +31,16 @@
   line-height: 33px;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 52px;
+  }
 }
 
 .about-clinic__title-color {
@@ -35,6 +56,11 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 35px;
+  }
 }
 
 .about-clinic__info {
@@ -47,11 +73,13 @@
   align-items: flex-end;
 
   @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: unset;
-    justify-content: flex-start;
-    max-width: 724px;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 800px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,6 +99,8 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    margin-bottom: 68px;
+    padding-left: 32px;
 
     &--1 {
       order: 1;
@@ -87,6 +117,12 @@
     &--4 {
       order: 4;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48.5%;
+    margin-bottom: 58px;
+    padding: 0 14px 0 32px;
   }
 }
 
@@ -105,6 +141,13 @@
   margin-top: 10px;
   margin-bottom: 8px;
 
+  @media (min-width: $tablet-width) {
+    left: -28px;
+    width: 2px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -118,6 +161,13 @@
     border-radius: 50px;
     top: -12px;
     right: -7px;
+
+    @media (min-width: $tablet-width) {
+      top: -15px;
+      right: -8px;
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &::after {
@@ -127,5 +177,15 @@
     border-radius: 50%;
     bottom: -12px;
     right: -3px;
+
+    @media (min-width: $tablet-width) {
+      width: 8px;
+      height: 8px;
+      bottom: -13px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
   }
 }
