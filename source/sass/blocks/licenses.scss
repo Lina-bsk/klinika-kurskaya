@@ -1,12 +1,27 @@
 .licenses {
   background-color: #fbfcfc;
+  padding-top: 32px;
+  padding-bottom: 55px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 95px;
+  }
 }
 
 .licenses__title {
-  @include font-title;
+  margin-bottom: 45px;
+  br {
+  display: none;
+ }
+
+  @media (min-width: $tablet-width) {
+    br {
+    display: inline-block;
+    }
+  }
 }
 
-.licenses__title-color {
-  font-weight: 700;
-  color: #50b3d4;
+.licenses__slider {
+  position: relative;
+  padding: 0 50px;
 }

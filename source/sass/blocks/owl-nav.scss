@@ -1,0 +1,47 @@
+.licenses__slider .owl-nav .owl-next,
+.licenses__slider .owl-nav .owl-prev {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  font-size: 0 !important;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, .22);
+  top: 50%;
+  color: $white;
+  transform: translateY(-50%);
+
+  &:hover {
+    color: $white;
+    background-color: $white;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #5cc3e3;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+}
+
+.owl-next {
+  right: 0;
+
+  &::before {
+    transform: rotate(132deg);
+    top: 33%;
+    left: 30%;
+  }
+}
+
+.owl-prev {
+  left: 0;
+
+  &::before {
+    transform: rotate(-50deg);
+    top: 34%;
+    left: 42%;
+  }
+}

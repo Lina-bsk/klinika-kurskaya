@@ -19,4 +19,8 @@
 
 .logo--footer {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

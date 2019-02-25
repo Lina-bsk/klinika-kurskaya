@@ -7,7 +7,11 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 86px;
-    background: url("../../img/bg-about-clinic.png") no-repeat 100% -7px;
+    background: url("../img/bg-about-clinic.png") no-repeat 617px -7px;
+  }
+
+  @media (min-width: 1550px) {
+    background-position: 100% -7px;
   }
 }
 
@@ -27,25 +31,18 @@
 }
 
 .about-clinic__title {
-  font-size: 24px;
-  line-height: 33px;
-  font-weight: 400;
-  margin: 0;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
+    text-align: center;
     line-height: 49px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 52px;
+    text-align: left;
   }
-}
-
-.about-clinic__title-color {
-  font-weight: 700;
-  color: #42afd2;
 }
 
 .about-clinic__title-description {
