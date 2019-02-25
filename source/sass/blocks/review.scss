@@ -202,6 +202,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
+    max-width: 960px;
   }
 
   @media (min-width: $desktop-width) {
@@ -265,6 +266,10 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 16px;
     text-align: left;
+
+    &--medicalcheck {
+      padding: 0 53px 0 0;
+    }
   }
 }
 
@@ -321,5 +326,9 @@
     line-height: 24px;
     text-align: left;
     padding: 0;
+
+    &--medicalcheck {
+      padding: 0 25px 0 0;
+    }
   }
 }

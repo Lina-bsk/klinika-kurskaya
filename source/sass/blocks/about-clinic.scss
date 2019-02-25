@@ -7,7 +7,13 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 86px;
-    background: url("../img/bg-about-clinic.png") no-repeat 617px -7px;
+
+    background: url('../img/bg-about-clinic.png') no-repeat 617px -7px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/bg-about-clinic@2x.png');
+      background-size: 935px auto;
+    }
   }
 
   @media (min-width: 1550px) {
@@ -16,17 +22,20 @@
 }
 
 .about-clinic__wrap {
-  color: $grey;
   margin-bottom: 42px;
 
+  color: $grey;
+
   @media (min-width: $tablet-width) {
-    text-align: center;
     margin-bottom: 52px;
+
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: left;
     margin-bottom: 92px;
+
+    text-align: left;
   }
 }
 
@@ -34,13 +43,15 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    text-align: center;
     line-height: 49px;
+
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 52px;
+
     text-align: left;
   }
 }
@@ -48,6 +59,7 @@
 .about-clinic__title-description {
   font-size: 12px;
   line-height: 24px;
+
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -62,21 +74,28 @@
 
 .about-clinic__info {
   line-height: 16px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
   display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
   flex-wrap: wrap;
   align-items: flex-end;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 20px;
+
     flex-direction: row;
+
+    max-width: 800px;
+
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    max-width: 800px;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,15 +106,16 @@
 .about-clinic__item {
   margin-bottom: 46px;
   padding-left: 30px;
-  max-width: 350px;
 
   span {
-    color: $grey;
     font-weight: 500;
+
+    color: $grey;
   }
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    max-width: 350px;
     margin-bottom: 68px;
     padding-left: 32px;
 
@@ -128,18 +148,22 @@
 }
 
 .about-clinic__decor {
+  position: relative;
+  left: -23px;
+
   width: 1px;
   height: auto;
-  background-color: $blue;
-  left: -23px;
-  flex-grow: 1;
-  flex-shrink: 0;
-  position: relative;
   margin-top: 10px;
   margin-bottom: 8px;
 
+  background-color: $blue;
+
+  flex-grow: 1;
+  flex-shrink: 0;
+
   @media (min-width: $tablet-width) {
     left: -28px;
+
     width: 2px;
     margin-top: 15px;
     margin-bottom: 7px;
@@ -147,38 +171,45 @@
 
   &::before,
   &::after {
-    content: "";
     position: absolute;
+
+    content: '';
   }
 
   &::before {
-    width: 15px;
-    height: 15px;
-    border: 5px solid $blue;
-    border-radius: 50px;
     top: -12px;
     right: -7px;
+
+    width: 15px;
+    height: 15px;
+
+    border: 5px solid $blue;
+    border-radius: 50px;
 
     @media (min-width: $tablet-width) {
       top: -15px;
       right: -8px;
+
       width: 18px;
       height: 18px;
     }
   }
 
   &::after {
+    right: -3px;
+    bottom: -12px;
+
     width: 7px;
     height: 7px;
-    background-color: $blue;
+
     border-radius: 50%;
-    bottom: -12px;
-    right: -3px;
+    background-color: $blue;
 
     @media (min-width: $tablet-width) {
+      bottom: -13px;
+
       width: 8px;
       height: 8px;
-      bottom: -13px;
     }
   }
 

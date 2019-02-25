@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  max-width: 350px;
+  margin: 0 auto;
 
   &--feedback {
     max-width: 600px;
@@ -9,8 +11,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
-    width: 542px;
-    margin: 0 auto;
+    max-width: 542px;
 
     &--feedback {
     max-width: 534px;
@@ -129,6 +130,7 @@
   text-align: center;
   padding: 6px 5px 7px 3px;
   margin: 0 auto 10px;
+  border: 0;
 
   @include button;
 
@@ -160,6 +162,7 @@
   text-align: center;
   padding: 7px 5px 7px 3px;
   margin: 0 auto 14px;
+  border: 0;
 
   @include button;
 

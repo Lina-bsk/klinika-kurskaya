@@ -856,6 +856,8 @@ img {
   position: relative;
   -webkit-box-shadow: 4.5px 7px 18px rgba(0, 0, 0, 0.1);
           box-shadow: 4.5px 7px 18px rgba(0, 0, 0, 0.1); }
+  .header__phone:hover {
+    text-decoration: none; }
   @media (min-width: 768px) {
     .header__phone {
       width: 189px;
@@ -1044,7 +1046,8 @@ img {
 
 .container {
   padding: 0 15px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%; }
   @media (min-width: 768px) {
     .container {
       padding: 0 20px;
@@ -1248,7 +1251,8 @@ img {
         background-position: 97% 40px; } }
   @media (min-width: 768px) {
     .review__wrap {
-      margin-bottom: 50px; } }
+      margin-bottom: 50px;
+      max-width: 960px; } }
   @media (min-width: 1200px) {
     .review__wrap {
       max-width: 100%;
@@ -1296,7 +1300,9 @@ img {
   @media (min-width: 1200px) {
     .review__title {
       margin-bottom: 16px;
-      text-align: left; } }
+      text-align: left; }
+      .review__title--medicalcheck {
+        padding: 0 53px 0 0; } }
 
 .review__description-header {
   text-align: center;
@@ -1340,7 +1346,9 @@ img {
       font-size: 16px;
       line-height: 24px;
       text-align: left;
-      padding: 0; } }
+      padding: 0; }
+      .review__description--medicalcheck {
+        padding: 0 25px 0 0; } }
 
 .form {
   display: -webkit-box;
@@ -1349,7 +1357,9 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  max-width: 350px;
+  margin: 0 auto; }
   .form--feedback {
     max-width: 600px; }
   @media (min-width: 768px) {
@@ -1357,8 +1367,7 @@ img {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
-      width: 542px;
-      margin: 0 auto; }
+      max-width: 542px; }
       .form--feedback {
         max-width: 534px; } }
   @media (min-width: 1200px) {
@@ -1459,6 +1468,7 @@ img {
   text-align: center;
   padding: 6px 5px 7px 3px;
   margin: 0 auto 10px;
+  border: 0;
   background-image: linear-gradient(45deg, #4fc3e9 0%, #4fc3e9 20%, #36a3c6 100%);
   -webkit-box-shadow: 5px 9px 21px rgba(54, 163, 198, 0.55);
           box-shadow: 5px 9px 21px rgba(54, 163, 198, 0.55);
@@ -1490,6 +1500,7 @@ img {
   text-align: center;
   padding: 7px 5px 7px 3px;
   margin: 0 auto 14px;
+  border: 0;
   background-image: linear-gradient(45deg, #4fc3e9 0%, #4fc3e9 20%, #36a3c6 100%);
   -webkit-box-shadow: 5px 9px 21px rgba(54, 163, 198, 0.55);
           box-shadow: 5px 9px 21px rgba(54, 163, 198, 0.55);
@@ -1738,28 +1749,32 @@ img {
     .about-clinic {
       padding-top: 86px;
       background: url("../img/bg-about-clinic.png") no-repeat 617px -7px; } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    .about-clinic {
+      background-image: url("../img/bg-about-clinic@2x.png");
+      background-size: 935px auto; } }
   @media (min-width: 1550px) {
     .about-clinic {
       background-position: 100% -7px; } }
 
 .about-clinic__wrap {
-  color: #333333;
-  margin-bottom: 42px; }
+  margin-bottom: 42px;
+  color: #333333; }
   @media (min-width: 768px) {
     .about-clinic__wrap {
-      text-align: center;
-      margin-bottom: 52px; } }
+      margin-bottom: 52px;
+      text-align: center; } }
   @media (min-width: 1200px) {
     .about-clinic__wrap {
-      text-align: left;
-      margin-bottom: 92px; } }
+      margin-bottom: 92px;
+      text-align: left; } }
 
 .about-clinic__title {
   text-align: left; }
   @media (min-width: 768px) {
     .about-clinic__title {
-      text-align: center;
-      line-height: 49px; } }
+      line-height: 49px;
+      text-align: center; } }
   @media (min-width: 1200px) {
     .about-clinic__title {
       font-size: 36px;
@@ -1780,12 +1795,12 @@ img {
 
 .about-clinic__info {
   line-height: 16px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: end;
@@ -1799,6 +1814,7 @@ img {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
+      max-width: 800px;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -webkit-box-align: start;
@@ -1806,22 +1822,21 @@ img {
               align-items: flex-start;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between;
-      max-width: 800px; } }
+              justify-content: space-between; } }
   @media (min-width: 1200px) {
     .about-clinic__info {
       width: 50%; } }
 
 .about-clinic__item {
   margin-bottom: 46px;
-  padding-left: 30px;
-  max-width: 350px; }
+  padding-left: 30px; }
   .about-clinic__item span {
-    color: #333333;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #333333; }
   @media (min-width: 768px) {
     .about-clinic__item {
       width: 50%;
+      max-width: 350px;
       margin-bottom: 68px;
       padding-left: 32px; }
       .about-clinic__item--1 {
@@ -1852,18 +1867,18 @@ img {
   display: flex; }
 
 .about-clinic__decor {
+  position: relative;
+  left: -23px;
   width: 1px;
   height: auto;
+  margin-top: 10px;
+  margin-bottom: 8px;
   background-color: #36a3c6;
-  left: -23px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 8px; }
+      flex-shrink: 0; }
   @media (min-width: 768px) {
     .about-clinic__decor {
       left: -28px;
@@ -1871,15 +1886,15 @@ img {
       margin-top: 15px;
       margin-bottom: 7px; } }
   .about-clinic__decor::before, .about-clinic__decor::after {
-    content: "";
-    position: absolute; }
+    position: absolute;
+    content: ''; }
   .about-clinic__decor::before {
+    top: -12px;
+    right: -7px;
     width: 15px;
     height: 15px;
     border: 5px solid #36a3c6;
-    border-radius: 50px;
-    top: -12px;
-    right: -7px; }
+    border-radius: 50px; }
     @media (min-width: 768px) {
       .about-clinic__decor::before {
         top: -15px;
@@ -1887,17 +1902,17 @@ img {
         width: 18px;
         height: 18px; } }
   .about-clinic__decor::after {
+    right: -3px;
+    bottom: -12px;
     width: 7px;
     height: 7px;
-    background-color: #36a3c6;
     border-radius: 50%;
-    bottom: -12px;
-    right: -3px; }
+    background-color: #36a3c6; }
     @media (min-width: 768px) {
       .about-clinic__decor::after {
+        bottom: -13px;
         width: 8px;
-        height: 8px;
-        bottom: -13px; } }
+        height: 8px; } }
   @media (min-width: 1200px) {
     .about-clinic__decor {
       margin-bottom: 13px; } }
@@ -1913,10 +1928,10 @@ img {
       padding: 14px 0 2px; } }
 
 .advantages__list {
-  counter-reset: section;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  counter-reset: section;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: start;
@@ -1927,10 +1942,10 @@ img {
       margin-bottom: 0; } }
 
 .advantages__item {
-  margin-bottom: 26px;
   position: relative;
   z-index: 1;
   max-width: 330px;
+  margin-bottom: 26px;
   padding-right: 20px; }
   @media (min-width: 768px) {
     .advantages__item:not(:nth-of-type(2n)) {
@@ -1949,12 +1964,12 @@ img {
         margin-right: 78px; } }
 
 .advantages__title {
-  color: #36a3c6;
   font-size: 15px;
-  line-height: 21px;
   font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 9px;
   padding-top: 40px;
-  margin-bottom: 9px; }
+  color: #36a3c6; }
   @media (min-width: 768px) {
     .advantages__title {
       font-size: 18px;
@@ -1962,15 +1977,15 @@ img {
       margin-bottom: 11px; } }
 
 .advantages__title::before {
-  counter-increment: section;
-  content: "0" counter(section);
-  position: absolute;
-  color: #f7f9fc;
   font-size: 86px;
   font-weight: 700;
+  position: absolute;
   z-index: -1;
   top: 24px;
-  left: -4px; }
+  left: -4px;
+  content: "0" counter(section);
+  counter-increment: section;
+  color: #f7f9fc; }
   @media (min-width: 768px) {
     .advantages__title::before {
       font-size: 100px;
@@ -2165,7 +2180,7 @@ img {
     padding-right: 29px; } }
 
 .licenses {
-  background-color: #fbfcfc;
+  background: url("../img/bg-license.png") no-repeat center top #fbfcfc;
   padding-top: 32px;
   padding-bottom: 55px; }
   @media (min-width: 1200px) {
@@ -2183,6 +2198,49 @@ img {
 .licenses__slider {
   position: relative;
   padding: 0 50px; }
+
+.owl-item a:hover .licenses__review {
+  opacity: 1; }
+
+.licenses__review {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(207, 233, 239, 0.74);
+  -webkit-transition: .3s;
+  transition: .3s; }
+
+.licenses__loupe {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  background: url("../img/loupe.png") no-repeat center #fff; }
+
+.licenses__text {
+  margin: 0;
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: #000000;
+  background-color: #ffffff; }
 
 .consultation {
   max-width: 430px;

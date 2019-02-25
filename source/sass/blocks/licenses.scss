@@ -1,5 +1,5 @@
 .licenses {
-  background-color: #fbfcfc;
+  background: url("../img/bg-license.png") no-repeat center top #fbfcfc;
   padding-top: 32px;
   padding-bottom: 55px;
 
@@ -24,4 +24,40 @@
 .licenses__slider {
   position: relative;
   padding: 0 50px;
+}
+
+.owl-item a:hover .licenses__review {
+  opacity: 1;
+}
+
+.licenses__review {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(207, 233, 239, .74);
+  transition: .3s;
+}
+
+.licenses__loupe {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, .1);
+  background: url("../img/loupe.png") no-repeat center #fff;
+}
+
+.licenses__text {
+  margin: 0;
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: $black;
+  background-color: $white;
 }

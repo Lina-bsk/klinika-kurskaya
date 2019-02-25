@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css">
 </head>
 
 <body>
@@ -41,9 +42,9 @@
           <p class="review__description-header">Выдача медицинских справок, оформление медицинских книжек, проведение психиатрического освидетельствования. Амбулаторный прием врачей. УЗИ. Медицинские анализы.</p>
           <img class="review__img-header" src="img/bg-passport.png">
           <form class="form" method="post">
-            <input class="form__phone form__phone--header" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
-            <a class="form__button-header" href="#">Записаться без очереди</a>
-            <label class="form__label form__label--header"><input class="visually-hidden form__checked" type="checkbox" name="agree" checked="checked"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
+            <input class="form__phone form__phone--header" type="tel" placeholder="+7 (___) ___ - __ - __" required>
+            <button class="form__button-header">Записаться без очереди</button>
+            <label class="form__label form__label--header"><input class="visually-hidden form__checked" type="checkbox" name="agree" checked="checked" required><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
           </form>
         </div>
         <ul class="review-info review-info--head">
@@ -122,10 +123,10 @@
             <h3 class="review__title">Выдача медицинских справок</h3>
             <p class="review__description">Медицинские справки требуются почти при любой жизненной ситуации. Каждый из нас устраивался на новую работу, поступал в учебное заведение, пропускал занятия, из за болезни не ходил на работу, сдавал анализы для бассейна.</p>
             <form class="form" method="post">
-              <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
-              <a class="form__button" href="#">Записаться без очереди</a>
+              <input class="form__phone" type="tel" id="phone" placeholder="+7 (___) ___ - __ - __" required>
+              <button class="form__button">Записаться без очереди</button>
               <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-              <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
+              <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree" required><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
             </form>
           </div>
           <ul class="review-info">
@@ -219,10 +220,10 @@
           <h3 class="review__title review__title--medicalbook">Оформление медицинских книжек</h3>
           <p class="review__description">Потребуется при устройстве на работу связанную с учебным процессом, продуктами питания, бытовым обслуживанием, медучреждениями, общественным транспортом и многих других сфер занятости</p>
           <form class="form" method="post">
-            <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
-            <a class="form__button" href="#">Записаться без очереди</a>
+            <input class="form__phone" type="tel" placeholder="+7 (___) ___ - __ - __" required>
+            <button class="form__button">Записаться без очереди</button>
             <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-            <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
+            <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree" required><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
           </form>
         </div>
         <ul class="review-info">
@@ -315,10 +316,10 @@
           <h3 class="review__title review__title--medicalcheck">Прохождение медицинской комиссии</h3>
           <p class="review__description review__description--medicalcheck">Водительская медкомиссия, психиатрическое освидетельствование, профосмотры</p>
           <form class="form" method="post">
-            <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
-            <a class="form__button" href="#">Записаться без очереди</a>
+            <input class="form__phone" type="tel" placeholder="+7 (___) ___ - __ - __" required>
+            <button class="form__button">Записаться без очереди</button>
             <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-            <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
+            <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree" required><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
           </form>
         </div>
         <ul class="review-info">
@@ -411,10 +412,10 @@
           <h3 class="review__title review__title--ultrasound">Проведение ультрозвуковых исследований (УЗИ)</h3>
           <p class="review__description review__description--ultrasound">Процедура имеет широчайший спектр показаний и активно применяется для диагностики заболеваний самых различных систем организма. Также проводится в профилактических целях и с целью контроля за результатами лечения, при беременности.</p>
           <form class="form" method="post">
-            <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
-            <a class="form__button" href="#">Записаться без очереди</a>
+            <input class="form__phone" type="tel" placeholder="+7 (___) ___ - __ - __" required>
+            <button class="form__button">Записаться без очереди</button>
             <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-            <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
+            <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree" required><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
           </form>
         </div>
         <ul class="review-info">
@@ -507,10 +508,10 @@
           <h3 class="review__title review__title--tests">Все виды лабораторных анализов</h3>
           <p class="review__description review__description--tests">Высокоточное оборудование последнего поколения, используемое лабораториями «Клиника на Курской», позволяет проводить исследования в автоматическом режиме и в кратчайшие сроки. Все исследования выполняются на автоматических анализаторах закрытого типа с использованием фирменных реагентов и калибраторов.</p>
           <form class="form" method="post">
-            <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
-            <a class="form__button" href="#">Записаться без очереди</a>
+            <input class="form__phone" type="tel" placeholder="+7 (___) ___ - __ - __" required>
+            <button class="form__button">Записаться без очереди</button>
             <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-            <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
+            <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree" required><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
           </form>
         </div>
         <ul class="review-info">
@@ -603,10 +604,10 @@
           <h3 class="review__title">Амбулаторный прием врачей</h3>
           <p class="review__description">Амбулаторный прием врачей по следующим специальностям: Терапевт, ЛОР, Хирург, Гинеколог, Дерматолог-венеролог.</p>
           <form class="form" method="post">
-            <input class="form__phone" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
-            <a class="form__button" href="#">Записаться без очереди</a>
+            <input class="form__phone" type="tel" placeholder="+7 (___) ___ - __ - __" required>
+            <button class="form__button">Записаться без очереди</button>
             <input class="visually-hidden" type="checkbox" id="check-agree" name="agree">
-            <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
+            <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree" required><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
           </form>
         </div>
         <ul class="review-info">
@@ -700,16 +701,40 @@
           <div class="owl-stage-outer">
             <div class="owl-stage">
               <div class="owl-item">
+                <a data-fancybox="gallery" href="img/licens.jpg">
                 <img src="img/licens.jpg" srcset="img/licens@2x.jpg 2x">
+                <div class="licenses__review">
+                <div class="licenses__loupe"></div>
+                <p class="licenses__text">Лицензия</p>
+                </div>
+              </a>
               </div>
               <div class="owl-item">
+                <a data-fancybox="gallery" href="img/licens.jpg">
                 <img src="img/licens.jpg" srcset="img/licens@2x.jpg 2x">
+                <div class="licenses__review">
+                <div class="licenses__loupe"></div>
+                <p class="licenses__text">Лицензия</p>
+                </div>
+              </a>
               </div>
               <div class="owl-item">
+                <a data-fancybox="gallery" href="img/licens.jpg">
                 <img src="img/licens.jpg" srcset="img/licens@2x.jpg 2x">
+                <div class="licenses__review">
+                <div class="licenses__loupe"></div>
+                <p class="licenses__text">Лицензия</p>
+                </div>
+              </a>
               </div>
               <div class="owl-item">
+                <a data-fancybox="gallery" href="img/licens.jpg">
                 <img src="img/licens.jpg" srcset="img/licens@2x.jpg 2x">
+                <div class="licenses__review">
+                <div class="licenses__loupe"></div>
+                <p class="licenses__text">Лицензия</p>
+                </div>
+              </a>
               </div>
             </div>
           </div>
@@ -724,11 +749,11 @@
         <div class="container">
           <h4 class="title consultation__title">Остались вопросы? Получите бесплатную консультацию</h4>
           <form class="form form--feedback" method="post">
-            <input class="form__name" type="text" name="name" placeholder="Как вас зовут?">
-            <input class="form__phone form__phone--feedback" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+            <input class="form__name" type="text" name="name" placeholder="Как вас зовут?" required>
+            <input class="form__phone form__phone--feedback" type="tel" placeholder="+7 (___) ___ - __ - __" required>
             <textarea class="form__text" name="text" rows="4" placeholder="Опишите ваш вопрос"></textarea>
-            <a class="form__button form__button--feedback" href="#">Записаться без очереди</a>
-            <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
+            <button class="form__button form__button--feedback">Записаться без очереди</button>
+            <label class="form__label"><input class="visually-hidden form__checked" type="checkbox" name="agree" required><span class="form__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
           </form>
         </div>
       </section>
@@ -774,10 +799,10 @@
           <span aria-hidden="true">&times;</span>
         </button>
         <form class="form modal__form" method="post">
-          <input class="form__name modal__input" type="text" name="name" placeholder="Как вас зовут?">
-          <input class="form__phone modal__input" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
-          <a class="form__button modal__button" href="#">Отправить</a>
-          <label class="form__label modal__label"><input class="visually-hidden form__checked" type="checkbox" name="agree"><span class="form__check modal__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
+          <input class="form__name modal__input" type="text" name="name" placeholder="Как вас зовут?" required>
+          <input class="form__phone modal__input" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __" required>
+          <button class="form__button modal__button">Отправить</button>
+          <label class="form__label modal__label"><input class="visually-hidden form__checked" type="checkbox" name="agree" required><span class="form__check modal__check">Я даю свое согласие на обработку  <a class ="form__check-info" href="#">персональных данных</a></span></label>
         </form>
       </div>
     </div>
@@ -787,6 +812,8 @@
   <script type="text/javascript" src="libs/popper.js/dist/umd/popper.min.js">
   </script>
   <script type="text/javascript" src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="libs/jquery.maskedinput.min.js" ></script>
+  <script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 
