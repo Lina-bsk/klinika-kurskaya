@@ -8,10 +8,10 @@
   @media (min-width: $desktop-width) {
     padding-top: 86px;
 
-    background: url('../img/bg-about-clinic.png') no-repeat 617px -7px;
+    background: url("../img/bg-about-clinic.png") no-repeat 617px -7px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../img/bg-about-clinic@2x.png');
+      background-image: url("../img/bg-about-clinic@2x.png");
       background-size: 935px auto;
     }
   }
@@ -173,7 +173,7 @@
   &::after {
     position: absolute;
 
-    content: '';
+    content: "";
   }
 
   &::before {

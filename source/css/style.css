@@ -829,7 +829,7 @@ img {
       margin-bottom: 89px; } }
 
 .header__btn-phone {
-  margin: 0 25px 0 auto; }
+  margin: 0 12px 0 auto; }
   @media (min-width: 768px) {
     .header__btn-phone {
       margin: 0 39px 0 auto;
@@ -912,7 +912,8 @@ img {
   position: relative;
   display: block;
   border: 0;
-  background-color: transparent; }
+  background-color: transparent;
+  width: 25px; }
   .header__nav-btn:focus {
     outline: none; }
   @media (min-width: 1200px) {
@@ -1088,11 +1089,11 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
+  color: #4c6783;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-  color: #4c6783; }
+          align-items: center; }
   .review--services {
     padding-bottom: 49px;
     background-color: #f4f7f9; }
@@ -1110,37 +1111,37 @@ img {
     padding-bottom: 30px;
     background: url("../img/bg-medicalcheck.png") #f4f7f9;
     background-repeat: no-repeat;
-    background-size: 990px;
-    background-position: 75% 0; }
+    background-position: 75% 0;
+    background-size: 990px; }
     @media (min-width: 768px) {
       .review--medicalcheck {
         padding-top: 373px;
         padding-bottom: 87px;
-        background-size: 1270px;
-        background-position: 84% 0; } }
+        background-position: 84% 0;
+        background-size: 1270px; } }
     @media (min-width: 1200px) {
       .review--medicalcheck {
         padding-top: 112px;
-        background-size: 1870px;
-        background-position: 47% 0; } }
+        background-position: 47% 0;
+        background-size: 1870px; } }
   .review--ultrasound {
     padding-top: 260px;
     padding-bottom: 44px;
     background: url("../img/bg-ultrasound.png") #e9f0f5;
     background-repeat: no-repeat;
-    background-size: 990px;
-    background-position: 75% 0; }
+    background-position: 75% 0;
+    background-size: 990px; }
     @media (min-width: 768px) {
       .review--ultrasound {
         padding-top: 362px;
         padding-bottom: 83px;
-        background-size: 1330px;
-        background-position: 95% 0; } }
+        background-position: 95% 0;
+        background-size: 1330px; } }
     @media (min-width: 1200px) {
       .review--ultrasound {
         padding-top: 131px;
-        background-size: 1874px;
-        background-position: 48% 0; } }
+        background-position: 48% 0;
+        background-size: 1874px; } }
   .review--tests {
     padding-bottom: 36px;
     background-color: #f4f7f9; }
@@ -1152,19 +1153,22 @@ img {
     padding-bottom: 36px;
     background: url("../img/bg-doctors.png") #e9f0f5;
     background-repeat: no-repeat;
-    background-size: 790px;
-    background-position: 74% 0; }
+    background-position: 74% 0;
+    background-size: 790px; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .review--doctors {
+        background-image: url("../img/bg-doctors@2x.png"); } }
     @media (min-width: 768px) {
       .review--doctors {
         padding-top: 329px;
         padding-bottom: 81px;
-        background-size: 1290px;
-        background-position: 81% 0; } }
+        background-position: 81% 0;
+        background-size: 1290px; } }
     @media (min-width: 1200px) {
       .review--doctors {
         padding-top: 186px;
-        background-size: 1890px;
-        background-position: 50% 0; } }
+        background-position: 50% 0;
+        background-size: 1890px; } }
   @media (min-width: 1200px) {
     .review {
       -webkit-box-align: start;
@@ -1172,13 +1176,13 @@ img {
               align-items: flex-start; } }
 
 .review__wrap-head {
-  margin-bottom: 26px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 26px; }
   @media (min-width: 768px) {
     .review__wrap-head {
       width: 65%;
-      margin-bottom: 68px;
-      max-width: 550px; } }
+      max-width: 550px;
+      margin-bottom: 68px; } }
   @media (min-width: 1200px) {
     .review__wrap-head {
       width: 50%;
@@ -1188,16 +1192,16 @@ img {
   display: none; }
   @media (min-width: 768px) {
     .review__img-header {
-      display: block;
       position: absolute;
-      max-width: 400px;
       top: -31px;
-      right: -401px; } }
+      right: -401px;
+      display: block;
+      max-width: 400px; } }
   @media (min-width: 1200px) {
     .review__img-header {
-      max-width: 600px;
       top: -21px;
-      right: -621px; } }
+      right: -621px;
+      max-width: 600px; } }
 
 .review__wrap {
   max-width: 600px;
@@ -1207,18 +1211,18 @@ img {
     padding-top: 272px;
     background: url("../img/paper.png") #f4f7f9;
     background-repeat: no-repeat;
-    background-size: 280px;
-    background-position: center 39px; }
+    background-position: center 39px;
+    background-size: 280px; }
     @media (min-width: 768px) {
       .review__wrap--services {
         padding-top: 405px;
-        background-size: 445px;
-        background-position: 55% 50px; } }
+        background-position: 55% 50px;
+        background-size: 445px; } }
     @media (min-width: 1200px) {
       .review__wrap--services {
         padding-top: 87px;
-        background-size: 545px;
-        background-position: 104% 4px; } }
+        background-position: 104% 4px;
+        background-size: 545px; } }
   .review__wrap--medicalbook {
     padding-top: 257px;
     background: url("../img/bg-medicalbook.png") #e9f0f5;
@@ -1231,34 +1235,37 @@ img {
     @media (min-width: 1200px) {
       .review__wrap--medicalbook {
         padding-top: 158px;
-        background-size: 644px;
-        background-position: 106% 6px; } }
+        background-position: 106% 6px;
+        background-size: 644px; } }
   .review__wrap--tests {
     padding-top: 308px;
     background: url("../img/bg-tests.png") #f4f7f9;
     background-repeat: no-repeat;
-    background-size: 304px;
-    background-position: 43% 40px; }
+    background-position: 43% 40px;
+    background-size: 304px; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .review__wrap--tests {
+        background-image: url("../img/bg-tests@2x.png"); } }
     @media (min-width: 768px) {
       .review__wrap--tests {
         padding-top: 421px;
-        background-size: 422px;
-        background-position: 50% 58px; } }
+        background-position: 50% 58px;
+        background-size: 422px; } }
     @media (min-width: 1200px) {
       .review__wrap--tests {
         padding-top: 165px;
-        background-size: 550px;
-        background-position: 97% 40px; } }
+        background-position: 97% 40px;
+        background-size: 550px; } }
   @media (min-width: 768px) {
     .review__wrap {
-      margin-bottom: 50px;
-      max-width: 960px; } }
+      max-width: 960px;
+      margin-bottom: 50px; } }
   @media (min-width: 1200px) {
     .review__wrap {
       max-width: 100%;
-      padding-right: 50%;
+      margin-bottom: 5px;
       margin-left: 0;
-      margin-bottom: 5px; } }
+      padding-right: 50%; } }
 
 .review__title-header {
   margin: 0;
@@ -1266,9 +1273,9 @@ img {
   padding: 0 10px; }
   @media (min-width: 768px) {
     .review__title-header {
+      margin-bottom: 18px;
       padding: 0;
-      text-align: left;
-      margin-bottom: 18px; } }
+      text-align: left; } }
   @media (min-width: 1200px) {
     .review__title-header {
       font-size: 38px;
@@ -1276,11 +1283,11 @@ img {
       margin-bottom: 21px; } }
 
 .review__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
   margin: 0;
   margin-bottom: 11px;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 700;
   color: #333333; }
   .review__title--medicalbook {
     margin-bottom: 15px; }
@@ -1290,11 +1297,11 @@ img {
     margin-bottom: 14px; }
   @media (min-width: 768px) {
     .review__title {
-      text-align: center;
       font-size: 27px;
       line-height: 37px;
       margin-bottom: 14px;
-      padding-right: 10px; }
+      padding-right: 10px;
+      text-align: center; }
       .review__title--medicalcheck {
         padding: 0 40px; } }
   @media (min-width: 1200px) {
@@ -1305,28 +1312,28 @@ img {
         padding: 0 53px 0 0; } }
 
 .review__description-header {
-  text-align: center;
-  color: #4c6783;
   line-height: 18px;
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+  text-align: center;
+  color: #4c6783; }
   @media (min-width: 768px) {
     .review__description-header {
       font-size: 14px;
       line-height: 23px;
-      text-align: left;
-      margin-bottom: 33px; } }
+      margin-bottom: 33px;
+      text-align: left; } }
   @media (min-width: 1200px) {
     .review__description-header {
       font-size: 16px;
       line-height: 25px;
-      padding-right: 37px;
-      margin-bottom: 36px; } }
+      margin-bottom: 36px;
+      padding-right: 37px; } }
 
 .review__description {
-  text-align: left;
-  color: #4c6783;
   line-height: 17px;
-  margin-bottom: 26px; }
+  margin-bottom: 26px;
+  text-align: left;
+  color: #4c6783; }
   .review__description--ultrasound {
     margin-bottom: 35px; }
   .review__description--tests {
@@ -1335,18 +1342,18 @@ img {
     .review__description {
       font-size: 16px;
       line-height: 25px;
+      margin-bottom: 48px;
       padding: 0 15px;
-      text-align: center;
-      margin-bottom: 48px; }
+      text-align: center; }
       .review__description--medicalcheck {
         padding: 0 25px; } }
   @media (min-width: 1200px) {
     .review__description {
-      color: #666666;
       font-size: 16px;
       line-height: 24px;
+      padding: 0;
       text-align: left;
-      padding: 0; }
+      color: #666666; }
       .review__description--medicalcheck {
         padding: 0 25px 0 0; } }
 
@@ -1354,20 +1361,20 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 350px;
+  margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
-  max-width: 350px;
-  margin: 0 auto; }
+      justify-content: space-around; }
   .form--feedback {
     max-width: 600px; }
   @media (min-width: 768px) {
     .form {
+      max-width: 542px;
       -webkit-box-pack: start;
           -ms-flex-pack: start;
-              justify-content: flex-start;
-      max-width: 542px; }
+              justify-content: flex-start; }
       .form--feedback {
         max-width: 534px; } }
   @media (min-width: 1200px) {
@@ -1375,99 +1382,99 @@ img {
       margin-left: 0; } }
 
 .form__phone {
-  border-radius: 17px;
-  border: 0;
-  padding: 12px 5px 12px 41px;
-  background: url("../../img/icon-call.png") no-repeat #ffffff;
-  background-size: 13px;
-  background-position: 19px 11px;
-  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
-          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
-  margin: 0 12px 14px;
+  font-size: 10px;
   width: 244px;
-  font-size: 10px; }
+  margin: 0 12px 14px;
+  padding: 12px 5px 12px 41px;
+  border: 0;
+  border-radius: 17px;
+  background: url("../../img/icon-call.png") no-repeat #ffffff;
+  background-position: 19px 11px;
+  background-size: 13px;
+  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06); }
   .form__phone--header {
-    padding: 7px 5px 6px 35px;
-    background-position: 14px 11px;
-    margin: 0 12px 12px;
-    width: 266px;
     font-size: 9px;
     line-height: 20px;
-    color: #4c6783; }
+    width: 266px;
+    margin: 0 12px 12px;
+    padding: 7px 5px 6px 35px;
+    color: #4c6783;
+    background-position: 14px 11px; }
   .form__phone--feedback {
     width: 100%;
     max-width: 400px;
-    padding: 12px 10px 14px 37px;
     margin: 0;
     margin-bottom: 17px;
+    padding: 12px 10px 14px 37px;
     background-position: 13px 12px; }
   @media (min-width: 768px) {
     .form__phone {
-      width: 270px;
       font-size: 14px;
-      border-radius: 31px;
+      width: 270px;
+      margin: 0 0 14px;
       padding: 17px 5px 17px 54px;
-      background-size: 18px;
+      border-radius: 31px;
       background-position: 21px 16px;
-      margin: 0 0 14px; }
+      background-size: 18px; }
       .form__phone--header {
-        width: 214px;
-        margin: 0 17px 0 0;
         font-size: 11px;
         line-height: 23px;
+        width: 214px;
+        margin: 0 17px 0 0;
         padding: 10px 5px 6px 42px;
-        background-size: 15px;
         border-radius: 20px;
-        background-position: 16px 11px; }
+        background-position: 16px 11px;
+        background-size: 15px; }
       .form__phone--feedback {
-        margin-left: auto;
         width: 256px;
+        margin-bottom: 18px;
+        margin-left: auto;
         padding-left: 47px;
-        background-position: 16px 17px;
-        margin-bottom: 18px; } }
+        background-position: 16px 17px; } }
   @media (min-width: 1200px) {
     .form__phone {
-      border-radius: 30px;
-      width: 268px;
       font-size: 14px;
       line-height: 30px;
-      background-position: 18px 17px;
-      padding: 12px 5px 8px 50px; }
+      width: 268px;
+      padding: 12px 5px 8px 50px;
+      border-radius: 30px;
+      background-position: 18px 17px; }
       .form__phone--header {
         margin-right: 20px; } }
 
 .form__name {
-  border-radius: 17px;
-  border: 0;
-  padding: 8px 10px 10px 38px;
-  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
-          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
-  margin-bottom: 13px;
-  background: url("../../img/icon-user.png") no-repeat #ffffff;
-  background-position: 15px 10px;
   font-size: 11px;
   line-height: 18px;
   width: 100%;
-  max-width: 400px; }
+  max-width: 400px;
+  margin-bottom: 13px;
+  padding: 8px 10px 10px 38px;
+  border: 0;
+  border-radius: 17px;
+  background: url("../../img/icon-user.png") no-repeat #ffffff;
+  background-position: 15px 10px;
+  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06); }
   @media (min-width: 768px) {
     .form__name {
       font-size: 14px;
+      width: 256px;
+      margin-bottom: 18px;
       padding: 17px 10px 16px 53px;
       border-radius: 30px;
-      width: 256px;
-      background-size: 14px;
       background-position: 21px 17px;
-      margin-bottom: 18px; } }
+      background-size: 14px; } }
 
 .form__button-header {
   font-size: 9px;
-  line-height: 20px;
   font-weight: 700;
-  color: #ffffff;
+  line-height: 20px;
   width: 266px;
-  text-align: center;
-  padding: 6px 5px 7px 3px;
   margin: 0 auto 10px;
+  padding: 6px 5px 7px 3px;
+  text-align: center;
+  color: #ffffff;
   border: 0;
   background-image: linear-gradient(45deg, #4fc3e9 0%, #4fc3e9 20%, #36a3c6 100%);
   -webkit-box-shadow: 5px 9px 21px rgba(54, 163, 198, 0.55);
@@ -1476,30 +1483,30 @@ img {
   border-radius: 16px; }
   @media (min-width: 768px) {
     .form__button-header {
+      font-size: 11px;
+      line-height: 23px;
       width: 192px;
       margin: 0;
-      line-height: 23px;
-      font-size: 11px;
       padding-top: 9px;
       border-radius: 20px; } }
   @media (min-width: 1200px) {
     .form__button-header {
-      width: 242px;
-      margin: 0;
       font-size: 14px;
       line-height: 30px;
-      border-radius: 30px;
-      padding-top: 11px; } }
+      width: 242px;
+      margin: 0;
+      padding-top: 11px;
+      border-radius: 30px; } }
 
 .form__button {
   font-size: 10px;
-  line-height: 21px;
   font-weight: 700;
-  color: #ffffff;
+  line-height: 21px;
   width: 244px;
-  text-align: center;
-  padding: 7px 5px 7px 3px;
   margin: 0 auto 14px;
+  padding: 7px 5px 7px 3px;
+  text-align: center;
+  color: #ffffff;
   border: 0;
   background-image: linear-gradient(45deg, #4fc3e9 0%, #4fc3e9 20%, #36a3c6 100%);
   -webkit-box-shadow: 5px 9px 21px rgba(54, 163, 198, 0.55);
@@ -1508,17 +1515,17 @@ img {
   border-radius: 16px; }
   .form__button--feedback {
     width: 179px;
-    margin-left: 0;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    margin-left: 0; }
   @media (min-width: 768px) {
     .form__button {
-      width: 242px;
       font-size: 14px;
       line-height: 30px;
+      width: 242px;
+      margin-left: 21px;
       padding-top: 10px;
       padding-left: 8px;
-      border-radius: 30px;
-      margin-left: 21px; }
+      border-radius: 30px; }
       .form__button--feedback {
         margin-bottom: 0;
         margin-left: 0;
@@ -1528,8 +1535,8 @@ img {
   margin: 9px auto 0 15px;
   color: #909090; }
   .form__label--header {
-    color: #4c6783;
-    margin-left: 0; }
+    margin-left: 0;
+    color: #4c6783; }
   @media (min-width: 768px) {
     .form__label {
       width: 50%;
@@ -1546,23 +1553,23 @@ img {
 .form__check {
   font-size: 10px;
   line-height: 15px;
-  padding-left: 45px;
   position: relative;
-  display: block; }
+  display: block;
+  padding-left: 45px; }
   .form__check::before {
-    content: "";
     position: absolute;
+    left: 24px;
     width: 14px;
     height: 14px;
+    content: "";
     border: 1px solid #93a3b4;
-    border-radius: 3px;
-    left: 24px; }
+    border-radius: 3px; }
   @media (min-width: 768px) {
     .form__check--feedback {
-      padding-left: 25px;
       display: inline-block;
       width: 50%;
-      padding-top: 11px; }
+      padding-top: 11px;
+      padding-left: 25px; }
     .form__check::before {
       left: 17px; }
     .form__check--feedback::before {
@@ -1574,19 +1581,19 @@ img {
         left: 13px; } }
 
 .form__check-info {
-  text-decoration: underline;
   cursor: pointer;
+  text-decoration: underline;
   color: inherit; }
 
 .form__checked:checked + .form__check::after {
-  content: "";
   position: absolute;
+  top: 4px;
+  left: 28px;
   width: 6px;
   height: 6px;
-  background-color: #36a3c6;
+  content: "";
   border-radius: 50%;
-  left: 28px;
-  top: 4px; }
+  background-color: #36a3c6; }
   @media (min-width: 768px) {
     .form__checked:checked + .form__check::after {
       left: 21px; } }
@@ -1595,23 +1602,23 @@ img {
       left: 17px; } }
 
 .form__text {
-  width: 100%;
-  border: 0;
-  border-radius: 24px;
   font-size: 10px;
   line-height: 18px;
-  padding: 11px 5px 3px 40px;
+  width: 100%;
   margin-bottom: 15px;
+  padding: 11px 5px 3px 40px;
+  border: 0;
+  border-radius: 24px;
   background: url("../../img/icon-question.png") no-repeat #ffffff;
   background-position: 15px 10px; }
   @media (min-width: 768px) {
     .form__text {
       font-size: 14px;
       line-height: 21px;
-      padding: 21px 5px 13px 52px;
       margin-bottom: 23px;
-      background-size: 17px;
-      background-position: 20px 22px; } }
+      padding: 21px 5px 13px 52px;
+      background-position: 20px 22px;
+      background-size: 17px; } }
 
 .review-info {
   display: -webkit-box;
@@ -1887,7 +1894,7 @@ img {
       margin-bottom: 7px; } }
   .about-clinic__decor::before, .about-clinic__decor::after {
     position: absolute;
-    content: ''; }
+    content: ""; }
   .about-clinic__decor::before {
     top: -12px;
     right: -7px;
@@ -2223,8 +2230,8 @@ img {
   left: 0;
   opacity: 0;
   background-color: rgba(207, 233, 239, 0.74);
-  -webkit-transition: .3s;
-  transition: .3s; }
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 .licenses__loupe {
   width: 70px;
@@ -2233,7 +2240,7 @@ img {
   margin-bottom: 15px;
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
-  background: url("../img/loupe.png") no-repeat center #fff; }
+  background: url("../img/loupe.png") no-repeat center #ffffff; }
 
 .licenses__text {
   margin: 0;

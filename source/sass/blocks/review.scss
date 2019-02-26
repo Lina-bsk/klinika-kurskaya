@@ -1,12 +1,16 @@
 .review {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   margin: 0 auto;
+
   color: $text-color;
+
+  align-items: center;
 
   &--services {
     padding-bottom: 49px;
+
     background-color: #f4f7f9;
 
     @media (min-width: $tablet-width) {
@@ -16,6 +20,7 @@
 
   &--medicalbook {
     padding-bottom: 41px;
+
     background-color: #e9f0f5;
 
     @media (min-width: $tablet-width) {
@@ -26,49 +31,56 @@
   &--medicalcheck {
     padding-top: 264px;
     padding-bottom: 30px;
+
     background: url("../img/bg-medicalcheck.png") #f4f7f9;
     background-repeat: no-repeat;
-    background-size: 990px;
     background-position: 75% 0;
+    background-size: 990px;
 
     @media (min-width: $tablet-width) {
       padding-top: 373px;
       padding-bottom: 87px;
-      background-size: 1270px;
+
       background-position: 84% 0;
+      background-size: 1270px;
     }
 
     @media (min-width: $desktop-width) {
       padding-top: 112px;
-      background-size: 1870px;
+
       background-position: 47% 0;
+      background-size: 1870px;
     }
   }
 
   &--ultrasound {
     padding-top: 260px;
     padding-bottom: 44px;
+
     background: url("../img/bg-ultrasound.png") #e9f0f5;
     background-repeat: no-repeat;
-    background-size: 990px;
     background-position: 75% 0;
+    background-size: 990px;
 
     @media (min-width: $tablet-width) {
       padding-top: 362px;
       padding-bottom: 83px;
-      background-size: 1330px;
+
       background-position: 95% 0;
+      background-size: 1330px;
     }
 
     @media (min-width: $desktop-width) {
       padding-top: 131px;
-      background-size: 1874px;
+
       background-position: 48% 0;
+      background-size: 1874px;
     }
   }
 
   &--tests {
     padding-bottom: 36px;
+
     background-color: #f4f7f9;
 
     @media (min-width: $tablet-width) {
@@ -79,22 +91,29 @@
   &--doctors {
     padding-top: 228px;
     padding-bottom: 36px;
+
     background: url("../img/bg-doctors.png") #e9f0f5;
     background-repeat: no-repeat;
-    background-size: 790px;
     background-position: 74% 0;
+    background-size: 790px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-doctors@2x.png");
+    }
 
     @media (min-width: $tablet-width) {
       padding-top: 329px;
       padding-bottom: 81px;
-      background-size: 1290px;
+
       background-position: 81% 0;
+      background-size: 1290px;
     }
 
     @media (min-width: $desktop-width) {
       padding-top: 186px;
-      background-size: 1890px;
+
       background-position: 50% 0;
+      background-size: 1890px;
     }
   }
 
@@ -104,13 +123,14 @@
 }
 
 .review__wrap-head {
-  margin-bottom: 26px;
   position: relative;
+
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     width: 65%;
-    margin-bottom: 68px;
     max-width: 550px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,17 +143,20 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-  display: block;
-  position: absolute;
-  max-width: 400px;
-  top: -31px;
-  right: -401px;
+    position: absolute;
+    top: -31px;
+    right: -401px;
+
+    display: block;
+
+    max-width: 400px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 600px;
     top: -21px;
     right: -621px;
+
+    max-width: 600px;
   }
 }
 
@@ -144,72 +167,85 @@
 
   &--services {
     padding-top: 272px;
+
     background: url("../img/paper.png") #f4f7f9;
     background-repeat: no-repeat;
-    background-size: 280px;
     background-position: center 39px;
+    background-size: 280px;
 
     @media (min-width: $tablet-width) {
       padding-top: 405px;
-      background-size: 445px;
+
       background-position: 55% 50px;
+      background-size: 445px;
     }
 
     @media (min-width: $desktop-width) {
       padding-top: 87px;
-      background-size: 545px;
+
       background-position: 104% 4px;
+      background-size: 545px;
     }
   }
 
   &--medicalbook {
     padding-top: 257px;
+
     background: url("../img/bg-medicalbook.png") #e9f0f5;
     background-repeat: no-repeat;
     background-position: center 15px;
 
     @media (min-width: $tablet-width) {
       padding-top: 376px;
+
       background-size: 544px;
     }
 
     @media (min-width: $desktop-width) {
       padding-top: 158px;
-      background-size: 644px;
+
       background-position: 106% 6px;
+      background-size: 644px;
     }
   }
 
   &--tests {
     padding-top: 308px;
+
     background: url("../img/bg-tests.png") #f4f7f9;
     background-repeat: no-repeat;
-    background-size: 304px;
     background-position: 43% 40px;
+    background-size: 304px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-tests@2x.png");
+    }
 
     @media (min-width: $tablet-width) {
       padding-top: 421px;
-      background-size: 422px;
+
       background-position: 50% 58px;
+      background-size: 422px;
     }
 
     @media (min-width: $desktop-width) {
       padding-top: 165px;
-      background-size: 550px;
+
       background-position: 97% 40px;
+      background-size: 550px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
     max-width: 960px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
-    padding-right: 50%;
-    margin-left: 0;
     margin-bottom: 5px;
+    margin-left: 0;
+    padding-right: 50%;
   }
 }
 
@@ -219,24 +255,28 @@
   padding: 0 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    text-align: left;
     margin-bottom: 18px;
+    padding: 0;
+
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 38px;
     line-height: 49px;
+
     margin-bottom: 21px;
   }
 }
 
 .review__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+
   margin: 0;
   margin-bottom: 11px;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 700;
+
   color: $grey;
 
   &--medicalbook {
@@ -252,11 +292,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    text-align: center;
     font-size: 27px;
     line-height: 37px;
+
     margin-bottom: 14px;
     padding-right: 10px;
+
+    text-align: center;
 
     &--medicalcheck {
       padding: 0 40px;
@@ -265,6 +307,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 16px;
+
     text-align: left;
 
     &--medicalcheck {
@@ -274,31 +317,40 @@
 }
 
 .review__description-header {
-  text-align: center;
-  color: $text-color;
   line-height: 18px;
+
   margin-bottom: 18px;
+
+  text-align: center;
+
+  color: $text-color;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 23px;
-    text-align: left;
+
     margin-bottom: 33px;
+
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 25px;
-    padding-right: 37px;
+
     margin-bottom: 36px;
+    padding-right: 37px;
   }
 }
 
 .review__description {
-  text-align: left;
-  color: $text-color;
   line-height: 17px;
+
   margin-bottom: 26px;
+
+  text-align: left;
+
+  color: $text-color;
 
   &--ultrasound {
     margin-bottom: 35px;
@@ -311,9 +363,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 25px;
-    padding: 0 15px;
-    text-align: center;
+
     margin-bottom: 48px;
+    padding: 0 15px;
+
+    text-align: center;
 
     &--medicalcheck {
       padding: 0 25px;
@@ -321,11 +375,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: $light-grey;
     font-size: 16px;
     line-height: 24px;
-    text-align: left;
+
     padding: 0;
+
+    text-align: left;
+
+    color: $light-grey;
 
     &--medicalcheck {
       padding: 0 25px 0 0;

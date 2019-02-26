@@ -78,6 +78,7 @@
     &--2 {
       order: 2;
     }
+
     &--3 {
       order: 3;
     }
@@ -162,10 +163,10 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-  font-size: 14px;
-  line-height: 20px;
-  margin-top: 12px;
-  padding: 0 45px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 12px;
+    padding: 0 45px;
   }
 
   @media (min-width: $desktop-width) {

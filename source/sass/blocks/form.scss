@@ -1,20 +1,23 @@
 .form {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+
   max-width: 350px;
   margin: 0 auto;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
 
   &--feedback {
     max-width: 600px;
   }
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-start;
     max-width: 542px;
 
+    justify-content: flex-start;
+
     &--feedback {
-    max-width: 534px;
+      max-width: 534px;
     }
   }
 
@@ -24,72 +27,84 @@
 }
 
 .form__phone {
-  border-radius: 17px;
-  border: 0;
-  padding: 12px 5px 12px 41px;
-  background: url("../../img/icon-call.png") no-repeat $white;
-  background-size: 13px;
-  background-position: 19px 11px;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
-  margin: 0 12px 14px;
-  width: 244px;
   font-size: 10px;
 
+  width: 244px;
+  margin: 0 12px 14px;
+  padding: 12px 5px 12px 41px;
+
+  border: 0;
+  border-radius: 17px;
+  background: url("../../img/icon-call.png") no-repeat $white;
+  background-position: 19px 11px;
+  background-size: 13px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
+
   &--header {
-    padding: 7px 5px 6px 35px;
-    background-position: 14px 11px;
-    margin: 0 12px 12px;
-    width: 266px;
     font-size: 9px;
     line-height: 20px;
+
+    width: 266px;
+    margin: 0 12px 12px;
+    padding: 7px 5px 6px 35px;
+
     color: $text-color;
+    background-position: 14px 11px;
   }
 
   &--feedback {
     width: 100%;
     max-width: 400px;
-    padding: 12px 10px 14px 37px;
     margin: 0;
     margin-bottom: 17px;
+    padding: 12px 10px 14px 37px;
+
     background-position: 13px 12px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 270px;
     font-size: 14px;
-    border-radius: 31px;
-    padding: 17px 5px 17px 54px;
-    background-size: 18px;
-    background-position: 21px 16px;
+
+    width: 270px;
     margin: 0 0 14px;
+    padding: 17px 5px 17px 54px;
+
+    border-radius: 31px;
+    background-position: 21px 16px;
+    background-size: 18px;
 
     &--header {
-      width: 214px;
-      margin: 0 17px 0 0;
       font-size: 11px;
       line-height: 23px;
+
+      width: 214px;
+      margin: 0 17px 0 0;
       padding: 10px 5px 6px 42px;
-      background-size: 15px;
+
       border-radius: 20px;
       background-position: 16px 11px;
+      background-size: 15px;
     }
 
     &--feedback {
-      margin-left: auto;
       width: 256px;
-      padding-left: 47px;
-      background-position: 16px 17px;
       margin-bottom: 18px;
+      margin-left: auto;
+      padding-left: 47px;
+
+      background-position: 16px 17px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    border-radius: 30px;
-    width: 268px;
     font-size: 14px;
     line-height: 30px;
-    background-position: 18px 17px;
+
+    width: 268px;
     padding: 12px 5px 8px 50px;
+
+    border-radius: 30px;
+    background-position: 18px 17px;
 
     &--header {
       margin-right: 20px;
@@ -98,88 +113,104 @@
 }
 
 .form__name {
-  border-radius: 17px;
-  border: 0;
-  padding: 8px 10px 10px 38px;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
-  margin-bottom: 13px;
-  background: url("../../img/icon-user.png") no-repeat $white;
-  background-position: 15px 10px;
   font-size: 11px;
   line-height: 18px;
+
   width: 100%;
   max-width: 400px;
+  margin-bottom: 13px;
+  padding: 8px 10px 10px 38px;
+
+  border: 0;
+  border-radius: 17px;
+  background: url("../../img/icon-user.png") no-repeat $white;
+  background-position: 15px 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.06);
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
-    padding: 17px 10px 16px 53px;
-    border-radius: 30px;
+
     width: 256px;
-    background-size: 14px;
-    background-position: 21px 17px;
     margin-bottom: 18px;
+    padding: 17px 10px 16px 53px;
+
+    border-radius: 30px;
+    background-position: 21px 17px;
+    background-size: 14px;
   }
 }
 
 .form__button-header {
   font-size: 9px;
-  line-height: 20px;
   font-weight: 700;
-  color: $white;
+  line-height: 20px;
+
   width: 266px;
-  text-align: center;
-  padding: 6px 5px 7px 3px;
   margin: 0 auto 10px;
+  padding: 6px 5px 7px 3px;
+
+  text-align: center;
+
+  color: $white;
   border: 0;
 
   @include button;
 
   @media (min-width: $tablet-width) {
+    font-size: 11px;
+    line-height: 23px;
+
     width: 192px;
     margin: 0;
-    line-height: 23px;
-    font-size: 11px;
     padding-top: 9px;
+
     border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 242px;
-    margin: 0;
     font-size: 14px;
     line-height: 30px;
-    border-radius: 30px;
+
+    width: 242px;
+    margin: 0;
     padding-top: 11px;
+
+    border-radius: 30px;
   }
 }
 
 .form__button {
   font-size: 10px;
-  line-height: 21px;
   font-weight: 700;
-  color: $white;
+  line-height: 21px;
+
   width: 244px;
-  text-align: center;
-  padding: 7px 5px 7px 3px;
   margin: 0 auto 14px;
+  padding: 7px 5px 7px 3px;
+
+  text-align: center;
+
+  color: $white;
   border: 0;
 
   @include button;
 
   &--feedback {
     width: 179px;
-    margin-left: 0;
     margin-bottom: 25px;
+    margin-left: 0;
   }
 
   @media (min-width: $tablet-width) {
-    width: 242px;
     font-size: 14px;
     line-height: 30px;
+
+    width: 242px;
+    margin-left: 21px;
     padding-top: 10px;
     padding-left: 8px;
+
     border-radius: 30px;
-    margin-left: 21px;
 
     &--feedback {
       margin-bottom: 0;
@@ -191,12 +222,14 @@
 
 .form__label {
   margin: 9px auto 0 15px;
+
   color: #909090;
 
 
   &--header {
-    color: $text-color;
     margin-left: 0;
+
+    color: $text-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -221,34 +254,41 @@
 .form__check {
   font-size: 10px;
   line-height: 15px;
-  padding-left: 45px;
+
   position: relative;
+
   display: block;
 
+  padding-left: 45px;
+
   &::before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  border: 1px solid #93a3b4;
-  border-radius: 3px;
-  left: 24px;
+    position: absolute;
+    left: 24px;
+
+    width: 14px;
+    height: 14px;
+
+    content: "";
+
+    border: 1px solid #93a3b4;
+    border-radius: 3px;
   }
 
   @media (min-width: $tablet-width) {
     &--feedback {
-    padding-left: 25px;
-    display: inline-block;
-    width: 50%;
-    padding-top: 11px;
+      display: inline-block;
+
+      width: 50%;
+      padding-top: 11px;
+      padding-left: 25px;
     }
 
     &::before {
-    left: 17px;
+      left: 17px;
     }
 
     &--feedback::before {
-    left: 2px;
+      left: 2px;
     }
   }
 
@@ -256,26 +296,30 @@
     padding-left: 34px;
 
     &::before {
-    left: 13px;
+      left: 13px;
     }
   }
 }
 
 .form__check-info {
-  text-decoration: underline;
   cursor: pointer;
+  text-decoration: underline;
+
   color: inherit;
 }
 
 .form__checked:checked + .form__check::after {
-  content: "";
   position: absolute;
+  top: 4px;
+  left: 28px;
+
   width: 6px;
   height: 6px;
-  background-color: $blue;
+
+  content: "";
+
   border-radius: 50%;
-  left: 28px;
-  top: 4px;
+  background-color: $blue;
 
   @media (min-width: $tablet-width) {
     left: 21px;
@@ -287,22 +331,26 @@
 }
 
 .form__text {
-  width: 100%;
-  border: 0;
-  border-radius: 24px;
   font-size: 10px;
   line-height: 18px;
-  padding: 11px 5px 3px 40px;
+
+  width: 100%;
   margin-bottom: 15px;
+  padding: 11px 5px 3px 40px;
+
+  border: 0;
+  border-radius: 24px;
   background: url("../../img/icon-question.png") no-repeat $white;
   background-position: 15px 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 21px;
-    padding: 21px 5px 13px 52px;
+
     margin-bottom: 23px;
-    background-size: 17px;
+    padding: 21px 5px 13px 52px;
+
     background-position: 20px 22px;
+    background-size: 17px;
   }
 }
