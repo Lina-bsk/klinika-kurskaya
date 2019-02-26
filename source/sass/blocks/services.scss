@@ -1,10 +1,10 @@
 .services {
-  padding: 40px 0 49px;
   color: $grey;
   background-color: #f4f7f9;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 54px;
+    padding-top: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,7 +14,7 @@
 
 .services__wrap {
   text-align: center;
-  padding: 0 20px;
+  padding: 0 34px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -23,29 +23,19 @@
 
   @media (min-width: $desktop-width) {
     line-height: 22px;
-    margin-bottom: 98px;
+    margin-bottom: 0;
   }
 }
 
 .services__title {
-  font-size: 24px;
-  line-height: 33px;
-  font-weight: 400;
-  text-align: center;
   margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
-    line-height: 42px;
+    padding-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 52px;
   }
-}
-
-.services__title-color {
-  color: #42afd2;
-  font-weight: 700;
 }

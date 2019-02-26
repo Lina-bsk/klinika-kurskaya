@@ -11,25 +11,28 @@ btnMenu.addEventListener('click', function() {
   }
 });
 
-// btnPrice.addEventListener('click', function() {
-//   if (btnPrice.classList.contains('pricelist__btn--open')) {
-//     btnPrice.classList.remove('pricelist__btn--open');
-//     btnPrice.classList.add('pricelist__btn--closed');
-//   } else {
-//     btnPrice.classList.add('pricelist__btn--open');
-//     btnPrice.classList.remove('pricelist__btn--closed');
-//   }
-// });
+$(document).ready(function(){
+$('.owl-carousel').owlCarousel();
+});
 
-var btnTrigger = document.querySelector('.button--trigger');
-var btnDisapear = document.querySelector('.button-disapear');
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:30,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        1200:{
+            items:4
+        }
+    }
+});
 
-btnTrigger.addEventListener('click', function() {
-  if (btnDisapear.classList.contains('button-disapear--open')) {
-    btnDisapear.classList.remove('button-disapear--open');
-    btnDisapear.classList.add('button-disapear--out');
-  } else {
-    btnDisapear.classList.add('button-disapear--open');
-    btnDisapear.classList.remove('button-disapear--out');
-  }
+$(document).ready(function(){
+  $(".form__phone").mask("+7 (999) 99-99-999");
 });

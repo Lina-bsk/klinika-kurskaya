@@ -1,10 +1,26 @@
 .consultation {
+  max-width: 430px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     width: 50%;
   }
 }
 
 .consultation__title {
-  @include font-title;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding: 0 37px;
+  }
 }

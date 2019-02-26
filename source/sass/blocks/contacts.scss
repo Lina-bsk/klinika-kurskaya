@@ -1,11 +1,38 @@
 .contacts {
+  padding-top: 26px;
+  padding-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 75px;
+    padding-bottom: 24px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 50%;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .contacts__title {
-  @include font-title;
+  margin-bottom: 10px;
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-bottom: 25px;
+  }
 }
 
 .contacts__info {
@@ -14,10 +41,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,10 +61,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
     font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1190px) {
+    &--1 {
+      order: 1;
+    }
+
+    &--2 {
+      order: 2;
+    }
+
+    &--3 {
+      order: 3;
+    }
+
+    &--4 {
+      order: 4;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    width: 80%;
+    padding-left: 27px;
+    margin-bottom: 17px;
   }
 }
 
@@ -44,25 +101,56 @@
   color: #919191;
   margin: 0;
   padding-top: 20px;
+  position: relative;
 
-  &--point {
-    background: url("../../img/icon-point.png") no-repeat top center;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 36%;
+    width: 14px;
+    height: 14px;
   }
 
-  &--calendar {
-    background: url("../../img/icon-calendar.png") no-repeat top center;
+  &--point::before {
+    background: url("../../img/icon-point.png") no-repeat;
+    background-size: contain;
   }
 
-  &--mail {
-    background: url("../../img/icon-mail.png") no-repeat top center;
+  &--calendar::before {
+    background: url("../../img/icon-calendar.png") no-repeat;
+    background-size: contain;
   }
 
-  &--call {
-    background: url("../../img/icon-call.png") no-repeat top center;
+  &--mail::before {
+    background: url("../../img/icon-mail.png") no-repeat;
+    background-size: contain;
+  }
+
+  &--call::before {
+    background: url("../../img/icon-call.png") no-repeat;
+    background-size: contain;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 12px;
+    padding-top: 31px;
+
+    &::before {
+      width: 18px;
+      height: 18px;
+      top: 3px;
+      left: 40%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+
+    &::before {
+      top: 20px;
+      left: -27px;
+    }
   }
 }
 
@@ -71,4 +159,18 @@
   line-height: 14px;
   color: $light-grey;
   text-align: center;
+  margin-top: 7px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 12px;
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    text-align: left;
+  }
 }
