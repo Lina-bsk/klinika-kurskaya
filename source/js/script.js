@@ -5,11 +5,28 @@ btnMenu.addEventListener('click', function() {
   if (btnMenu.classList.contains('header__nav-btn--open')) {
     btnMenu.classList.remove('header__nav-btn--open');
     btnMenu.classList.add('header__nav-btn--closed');
+    $("body").addClass('overflow');
+
   } else {
     btnMenu.classList.add('header__nav-btn--open');
     btnMenu.classList.remove('header__nav-btn--closed');
+    $("body").removeClass('overflow');
   }
 });
+
+$(".header__nav-item").click(function () {
+  var elementClick = $(this).attr("href")
+  var destination = $(elementClick).offset().top;
+  jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
+  return false;
+});
+
+$(".header__nav-item").on("click", function() {
+  $("body").removeClass('overflow');
+  btnMenu.classList.remove('header__nav-btn--closed');
+  btnMenu.classList.add('header__nav-btn--open');
+})
+
 
 $(document).ready(function(){
 $('.owl-carousel').owlCarousel();

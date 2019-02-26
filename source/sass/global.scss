@@ -33,3 +33,12 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.overflow {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
