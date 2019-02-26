@@ -36,6 +36,7 @@
 
 .header__btn-phone {
   margin: 0 12px 0 auto;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     margin: 0 39px 0 auto;
@@ -136,6 +137,7 @@
   border: 0;
   background-color: transparent;
   width: 25px;
+  transition: 0.3s;
 
   &:focus {
     outline: none;
@@ -155,6 +157,7 @@
   box-shadow: 0 5px 0 0 #4eb7d9;
   right: 0;
   top: 6px;
+  transition: 0.3s;
 
   @media (min-width: $tablet-width) {
     right: 4px;
@@ -170,6 +173,7 @@
   background-color: #4eb7d9;
   top: 16px;
   right: 8px;
+  transition: 0.3s;
 
   @media (min-width: $tablet-width) {
     top: 24px;
@@ -210,6 +214,10 @@
   display: block;
   text-align: center;
 
+  &:hover {
+    text-decoration: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 60px;
@@ -232,6 +240,7 @@
     height: 2px;
     top: 11px;
     right: -3px;
+    transition: 0.3s;
 
     @media (min-width: $tablet-width) {
       top: 17px;
